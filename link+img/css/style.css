@@ -1,0 +1,41 @@
+#a1{
+	max-width: 100%;
+}
+.tensp{
+	text-align: center;	
+}
+p{
+	text-align: center;
+}
+.tensp::before{
+	
+	
+    background-image: url(../img/icon2.gif);
+    background-size: cover;
+    display: inline-block;
+    width: 28px;
+    height: 27px;
+    content: "";
+}
+.tensp::after{
+	background-image: url(../img/icon.gif);
+    background-size: cover;
+    display: inline-block;
+    width: 28px;
+    height: 27px;
+    content: "";
+
+}
+
+.bo{
+	border: 1px dotted red;
+	text-align: center;
+}
+
+.tensp{text-decoration: none;}
+.tensp:link{color: pink;}
+.tensp:visited{coor: grey;}
+.tensp:hover{color: red;
+		font-size: 120%}
+
+
