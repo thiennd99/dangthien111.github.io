@@ -1,0 +1,73 @@
+.title {
+	
+	width: 150px;
+	height: 50px;
+	animation-name: title;
+	animation-duration: 4s;
+	position: relative;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+
+	
+}
+@keyframes title {
+    0%   {background-color:red; color: lightblue; left:0px; top:0px;}
+    25%  {background-color:yellow; color: pink; left:200px; top:0px;}
+    50%  {background-color:blue; color: grey; left:200px; top:200px;}
+    75%  {background-color:green; color: yellow; left:0px; top:200px;}
+    100% {background-color:red; color: lightblue; left:0px; top:0px;}
+}
+h3 {
+	text-align: right;
+}
+h2 {
+	text-align: center;
+}
+div {
+	width: 800px;
+	height: 400px;
+	margin: auto;
+}
+.animate-fading{
+	animation: fading 2s infinite;
+}
+@keyframes fading{
+	0% {opacity:0}
+	50% {opacity:1}
+	100% {opacity:0}
+}
+.left-right {
+	position: relative;
+	animation: animateright 4s infinite;
+}
+@keyframes animateright{
+	
+
+	0% {right:0;
+		opacity:0;} 
+	50% {right:100px;
+		opacity:1;}
+	100% {
+		right: 300px;
+		opacity: 0;
+
+	}
+
+}
+div {
+	width: 1264px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
