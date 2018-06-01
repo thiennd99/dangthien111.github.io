@@ -31,23 +31,23 @@ h1 {
 }
 .anh {
 	float: left;
-	margin: 2.5%;
 	cursor: pointer;
-	width: 20%;
-	display: table;
+	width: 25%;
+	padding: 10px;
+	
 	
 	
 
 
 }
 img {
-	max-width: 100%;
+	width: 100%;
 }
 .clear {
 	clear: both;
 }
 .anh:hover {
-  animation: shake 0.5s;
+  	animation: shake 0.5s
  
 }
 
