@@ -5,9 +5,10 @@
 	margin: auto;
 }
 .slogan {
-  transform: translate(25%,0%);
+  
 	position: absolute;
 	animation: slogan 4s linear infinite;
+  left: 15%;
 }
 @keyframes slogan {
 	0% { color: pink; }
