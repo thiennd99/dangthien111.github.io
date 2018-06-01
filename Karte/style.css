@@ -1,14 +1,13 @@
-.container {
+.images {
   position: relative;
-	width: 45%;
-	height: 20%;
-	margin: auto;
 }
 .slogan {
   
 	position: absolute;
 	animation: slogan 4s linear infinite;
-  left: 15%;
+  top:0;
+  left: 35%;
+  
 }
 @keyframes slogan {
 	0% { color: pink; }
