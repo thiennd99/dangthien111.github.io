@@ -1,15 +1,12 @@
 .container {
-	width: 49%;
+  position: relative;
+	width: 45%;
 	height: 20%;
-	
 	margin: auto;
-
-
 }
 .slogan {
-  transform: translate(45%,5%);
+  transform: translate(25%,0%);
 	position: absolute;
-	left: 20%;
 	animation: slogan 4s linear infinite;
 }
 @keyframes slogan {
@@ -24,16 +21,14 @@ img {
 	margin: auto;
 	max-width: 100%;
 	display: block;
+  animation: shake 0.5s;
 	
 }
 html {
 	background-color: black;
 }
 
-img {
-  animation: shake 0.5s;
 
-}
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
