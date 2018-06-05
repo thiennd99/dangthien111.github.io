@@ -59,7 +59,7 @@ span {
 #main-menu {
 	
 	background-color: pink;
-	
+	position: absolute;
 	width: 15%;
 	border-radius: 10%;
 	float: left;
@@ -85,6 +85,7 @@ span {
 	width: 100%;
 	background-color: #cbffe6;
 	overflow: auto;
+	position: relative;
 }
 .main-box {
 	width: 85%;
