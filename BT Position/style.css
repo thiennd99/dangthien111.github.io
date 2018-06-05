@@ -6,6 +6,7 @@
 	font-size: 20px;
 	color: red;
 	text-decoration: none;
+
 	
 }
 
@@ -14,14 +15,13 @@
 	color: black;
 }
 .box {
-	border: 1px solid #4dbfd9;
+	
 	border-radius: 10px;
 	border-top-width: 5px;
 	border-bottom-width: 5px;
+	padding: 10px;
 	float: left;
 	width: 33.1%;
-	padding: 10px;
-	margin: 0.1%;
 
 	
 }
@@ -53,16 +53,17 @@ span {
 }
 #anh-banner {
 	max-width: 100%;
-	position: relative;
+	
 	
 }
 #main-menu {
-	position: absolute;
+	
 	background-color: pink;
-	max-width: 10%;
+	
+	width: 15%;
 	border-radius: 10%;
-	top: 65%;
-	left:0;
+	float: left;
+	
 }
 
 }
@@ -79,6 +80,18 @@ span {
 #icon {
 	width: 60px;
 	height: 40px;
+}
+.main-content {
+	width: 100%;
+	background-color: #cbffe6;
+	overflow: auto;
+}
+.main-box {
+	width: 85%;
+	float: right;
+}
+.menu {
+	padding: 10px;
 }
 
 
