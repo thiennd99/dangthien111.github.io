@@ -1,0 +1,303 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	background-color: #353541;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.first-sec, .second-sec {
+	max-width: 85%;
+	margin-left: 15%;
+}
+
+.first-sec {
+	background: url("https://icdn2.digitaltrends.com/image/imac_coffee_table-720x720.jpg?ver=1.jpg") top center no-repeat;
+	background-blend-mode: luminosity;
+	background-size: cover;
+	height: 100%;
+	filter: grayscale(100%);
+	position: relative;
+}
+
+.second-sec {
+	background-color: white;
+}
+
+.headlines {
+	position: absolute;
+	top: 30%;
+	left: 55%;
+	text-align: center;
+	color: white;
+	transform: translate(-50%, -50%)
+}
+
+.line1 {
+	font-size: 40px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.line2 {
+	font-size: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.button {
+	background-color: #f44336;
+	color: white;
+	border-radius: 7px;
+	padding: 10px 43px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+}
+
+.box {
+	float: left;
+	width: 49%;
+	position: relative;
+	margin: 0.5%;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 65%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sidenav {
+	height: 300%;
+	width: 15%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #353541;
+	overflow-x: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.bg-color1 {
+	background-color: #01B9C3;
+}
+
+.bg-color2 {
+	background-color: #1E2E3E;
+}
+
+.bg-color3 {
+	background-color: #3F3D3E;
+}
+
+.bg-color4 {
+	background-color: #0093B5;
+}
+
+.bg-color5 {
+	background-color: #353541;
+}
+
+.bg-color6 {
+	background-color: #6176AB;
+}
+
+.section {
+	width: 80%;
+	margin: auto;
+}
+
+.column {
+	float: left;
+	width: 49%;
+	margin-top: 100px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.info {
+	width: 50%;
+	height: 45px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: oblique;
+}
+
+.mess {
+	width: 50%;
+	height: 100px;
+	border: 1px solid #ccc;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: oblique;
+}
+
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	padding-left: 15px;
+	color: white;
+}
+
+.noname {
+	padding-left: 15px;
+	color: white;
+}
+
+.after::after {
+	content: "";
+	display: block;
+	margin-top: 2px;
+	width: 100px;
+	height: 2px;
+	background-color: white;
+}
+
+.after {
+	padding-left: 15px;
+	color: white;
+}
+
+.title {
+	color: black;
+	font-size: 45px;
+	display: inline-block;
+	margin-top: 70px;
+}
+
+.title::after {
+	content: "";
+	display: block;
+	margin-top: 8px;
+	width: 80px;
+	height: 2px;
+	background-color: #FC7781;
+}
+
+.navigation::after {
+	content: "";
+	display: block;
+	margin-top: 8px;
+	width: 100%;
+	height: 2px;
+	background-color: #FC7781;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.anothername {
+	margin-left: 17%;
+}
+
+.box1, .box2 {
+	margin-top: 80px;
+}
+
+.side-item {
+	border-bottom: 2px solid black;
+	height: 60px;
+	margin-top: 27px;
+}
+
+.some-name {
+	color: white;
+	font-size: 25px;
+	margin: 40px;
+}
+
+.icon {
+	font-size: 50px;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	align-items: center;
+}
+
+.first_column {
+	border-right: 1px solid black;
+}
+
+.second_column {
+	padding-left: 150px;
+}
+
+.media {
+	margin-left: 45%;
+	margin-top: 40px;
+}
+
+.footer {
+	margin-left: 38%;
+	margin-top: 40px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: grey;
+	padding-bottom: 40px;
+}
+.second_button{
+	background-color: #f44336;
+	color: white;
+	border-radius: 7px;
+	padding: 7px 14px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	margin-left: 34%;
+	
+
+}
