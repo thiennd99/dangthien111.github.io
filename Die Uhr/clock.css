@@ -17,8 +17,8 @@
   border-radius: 50%;
   border: 14px solid #333;
   position: absolute;
-  top: 12%; 
-  left: 45%;
+  top: 17%; 
+  left: 43%;
 }
 .clock-2 {
   background: #ececec;
@@ -28,7 +28,7 @@
   border-radius: 50%;
   border: 14px solid #333;
   position: absolute;
-  top: 12%; 
+  top: 17%; 
   left: 51%;
 }
 .clock-3 {
@@ -39,8 +39,8 @@
   border-radius: 50%;
   border: 14px solid #333;
   position: absolute;
-  top: 19%; 
-  left: 48%;
+  top: 27%; 
+  left: 47%;
 }
 
 .dot {
