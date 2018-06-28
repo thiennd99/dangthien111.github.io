@@ -60,13 +60,13 @@ html, body {
 
 .box {
 	float: left;
-	width: 49%;
+	width: 50%;
 	position: relative;
 	padding: 0.5%;
 }
 .box-item {
 	position: absolute;
-	top: 71%;
+	top: 72%;
 	width: 98%;
 
 }
@@ -138,17 +138,18 @@ img {
 	clear: both;
 }
 
-.info {
-	width: 50%;
+input {
+	width: 60%;
 	height: 45px;
 	border: 1px solid #ccc;
 	margin-bottom: 15px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-style: oblique;
+	display: block;
 }
 
-.mess {
-	width: 50%;
+#my_text_area {
+	width: 60%;
 	height: 100px;
 	border: 1px solid #ccc;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -295,10 +296,11 @@ a {
 	padding: 7px 14px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	font-size: 15px;
+	display: block;
+	font-size: 20px;
 	cursor: pointer;
-	margin-left: 34%;
-	
-
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
 }
