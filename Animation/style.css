@@ -43,19 +43,14 @@ div {
 @keyframes animateright{
 	
 
-	0% {right:0;
+	0% {right: 0;
 		opacity:0;} 
-	50% {right:100px;
+	50% {right: 100px;
 		opacity:1;}
 	100% {
 		right: 300px;
 		opacity: 0;
-
 	}
-
-}
-div {
-	width: 1264px;
 }
 
 
