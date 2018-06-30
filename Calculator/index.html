@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Mein Taschenrechner!</h1>
+    <div class="wrap">
+        <input class="a1" id="display" type="text" value="">
+        <div class="tastatur">
+            <input class="button" name="square" type="button" value="^2" onclick="getValue(this)" >
+            <input class="button" name="factorial" type="button" value="!" onclick="getValue(this)" >
+            <input class="button" name="square_root" type="button" value="√" onclick="getValue(this)">
+            <input class="button" name="multi" type="button" value="x" onclick="getValue(this)">
+            <input class="button" name="seven" type="button" value="7" onclick="getValue(this)">
+            <input class="button" name="eight" type="button" value="8" onclick="getValue(this)">
+            <input class="button" name="nine" type="button" value="9" onclick="getValue(this)">
+            <input class="button" name="divide" type="button" value="÷" onclick="getValue(this)">
+            <input class="button" name="four" type="button" value="4" onclick="getValue(this)">
+            <input class="button" name="five" type="button" value="5" onclick="getValue(this)">
+            <input class="button" name="six" type="button" value="6" onclick="getValue(this)">
+            <input class="button" name="plus" type="button" value="+" onclick="getValue(this)">
+            <input class="button" name="one" type="button" value="1" onclick="getValue(this)">
+            <input class="button" name="two" type="button" value="2" onclick="getValue(this)">
+            <input class="button" name="three" type="button" value="3" onclick="getValue(this)">
+            <input class="button" name="minus" type="button" value="-" onclick="getValue(this)">
+            <input class="button" name="zero" type="button" value="0" onclick="getValue(this)">
+            <input class="button" name="comma" type="button" value="," onclick="getValue(this)">
+            <input class="button" name="clear" type="button" value="c" onclick="clearAll()">
+            <input class="button" name="equal" type="button" value="=" onclick="getValue(this)">
+            <button class="num" data-num  > </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
