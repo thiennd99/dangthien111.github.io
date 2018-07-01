@@ -14,7 +14,7 @@ function clearAll() {
 }
 function equal(){
   var a = document.getElementById("display").value;
-  let b = eval(a);  f
+  let b = eval(a);  
   i = 1;
   if(b<1){
      document.getElementById("display").value = b.toFixed(1);
