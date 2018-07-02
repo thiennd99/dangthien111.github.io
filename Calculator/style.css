@@ -10,7 +10,7 @@ html,body{
 }
 .wrap {
     max-width: 500px;
-    height: 60%;
+    height: 80%;
     background-color: antiquewhite;
     border: 15px orange solid;
     border-radius: 10px;
@@ -20,7 +20,7 @@ html,body{
     -o-border-radius: 10px;
     box-shadow: 2px 14px 16px 7px;
     margin: auto;
-    margin-top: 100px;
+  
 }
 h1 {
     font-size: 60px;
