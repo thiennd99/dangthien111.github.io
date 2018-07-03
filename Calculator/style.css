@@ -42,7 +42,7 @@ h1 {
     background-color: #D7D6D6;
 }
 .button {
-    width: 24%;
+    width: 19%;
     height: 18%;
     margin-top: 10px;
     margin-left: 1px;
@@ -52,4 +52,7 @@ h1 {
 }
 .button:hover {
     box-shadow: 1px 3px 5px 3px;
+}
+.equal {
+    width: 39%;
 }
