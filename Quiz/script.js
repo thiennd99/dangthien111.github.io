@@ -45,37 +45,4 @@ var Arr = [combo_1, combo_2, combo_3, combo_4, combo_5],
     a3 = document.getElementById('answer_content_3'),
     a4 = document.getElementById('answer_content_4'),
     mark = 0,
-    count = 1
-    ;
-q.innerHTML = Arr[0].question;
-a1.innerHTML = Arr[0].first_answer;
-a2.innerHTML = Arr[0].second_answer;
-a3.innerHTML = Arr[0].third_answer;
-a4.innerHTML = Arr[0].fourth_answer;
-for (var answerGroup = document.getElementsByClassName("answer_item"), i = 0; i < answerGroup.length; i++)
-    answerGroup[i].addEventListener("click", function() {
-        if (this.innerText == arr[count-1].answer && (mark += 1),
-        count < arr.length)
-            
-            q.innerHTML = arr[temp].question,
-            a1.innerHTML = arr[temp].choose1,
-            a2.innerHTML = arr[temp].choose2,
-            a3.innerHTML = arr[temp].choose3,
-            a4.innerHTML = arr[temp].choose4,
-            foot.innerHTML = "<p class='foot'>Câu số " + (temp + 1) + " / " + arr.length + "</p>";
-        else if (6 == mark)
-            window.location.href = "win.html";
-        else {
-            document.getElementById("questions").style.display = "none",
-            document.getElementById("answer").style.display = "none",
-            document.getElementById("footer").style.display = "none",
-            document.getElementById("resAlert1").innerHTML = "<h1>Rất tiếc bạn đã thất bại!</h1>";
-            for (var e = 0; e < mark; e++)
-                document.getElementById("resAlert2").innerHTML += "<img src='image/success-icon.png' style='width:50px' />";
-            document.getElementById("resAlert3").innerHTML = "<button id='back' onclick='clickBtnBack()'>Chơi lại nào</button>"
-        }
-        temp += 1
-    });
-
-
-
+    count = 1;
