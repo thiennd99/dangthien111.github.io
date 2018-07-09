@@ -12,26 +12,25 @@
 <body>
         <div class="wrap">
                 <h1>Mein Quiz !!</h1>
-                <div class="container">
+                <div id="container" class="container">
 
                         <div id="question">
                                 <p id="question_content"></p>
                         </div>
-                        <div class="answer row_1_1">
-                                <p id="answer_content_1" class="answer_item" onclick="next()"></p>
+                        <div class="main_answer">
+                                <button id="answer_content_1" class="answer_item" onclick="next(this)" value = "1" ></button>
+                        
+                        
+                                <button id="answer_content_2" class="answer_item" onclick="next(this)" value = "2"></button>
+                        
+                        
+                                <button id="answer_content_3" class="answer_item" onclick="next(this)" value = "3"></button>
+                        
+                        
+                                <button id="answer_content_4" class="answer_item" onclick="next(this)" value = "4"></button>
+                                <div class="clear"></div>
                         </div>
-                        <div class="answer row_1_2">
-                                <p id="answer_content_2" class="answer_item" onclick="next()"></p>
-                        </div>
-                        <div class="answer row_2_1">
-                                <p id="answer_content_3" class="answer_item" onclick="next()"></p>
-                        </div>
-                        <div class="answer row_2_2">
-                                <p id="answer_content_4" class="answer_item" onclick="next()"></p>
-                        </div>
-                        <!-- <div class="back">Zurück</div>
-                        <div class="next">Nächste</div>
-                        <div class="sub">Submit!</button> -->
+                       
                 </div>
         </div>
         <script src="script.js"></script>

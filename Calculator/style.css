@@ -1,5 +1,6 @@
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html,body{
     width: 100%;
@@ -18,7 +19,8 @@ html,body{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    box-shadow: 2px 14px 16px 7px;
+    -webkit-box-shadow: 2px 14px 16px 7px;
+            box-shadow: 2px 14px 16px 7px;
     margin: auto;
   
 }
@@ -51,7 +53,8 @@ h1 {
     
 }
 .button:hover {
-    box-shadow: 1px 3px 5px 3px;
+    -webkit-box-shadow: 1px 3px 5px 3px;
+            box-shadow: 1px 3px 5px 3px;
 }
 .equal {
     width: 39%;

@@ -45,63 +45,20 @@ h1 {
     margin: auto;
 }
 
-.row_1_1 {
-    width: 43%;
-    height: 70px;
-    background-color: white;
+.clear {
+    clear: both;
+}
+.main_answer {
     position: absolute;
-    top: 210px;
-    left: 40px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    top: 50%;
+    left: 5%;
+    width: 100%;
 }
 
-.row_1_2 {
-    width: 43%;
-    height: 70px;
-    background-color: white;
-    position: absolute;
-    top: 210px;
-    right: 40px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
 
-.row_2_1 {
-    width: 43%;
-    height: 70px;
-    background-color: white;
-    position: absolute;
-    top: 290px;
-    left: 40px;
-    margin-top: 30px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
 
-.row_2_2 {
-    width: 43%;
-    height: 70px;
-    background-color: white;
-    position: absolute;
-    top: 290px;
-    right: 40px;
-    margin-top: 30px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
+
+
 
 #question_content {
     width: 80%;
@@ -114,21 +71,25 @@ h1 {
 }
 
 .answer_item {
-    width: 80%;
-    height: 50px;
+    width: 45%;
+    height: 70px;
     margin: 5px auto;
     text-align: center;
     font-size: 30px;
     color: #c0d531;
     padding: 15px 5px;
-
-}
-.answer {
     cursor: pointer;
+    float: left;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-.answer:hover {
-    background-color: violet;
+
+.answer_item:hover {
+    background-color: rgb(121, 240, 190);
 }
 
 /* .back {
