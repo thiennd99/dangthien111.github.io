@@ -43,6 +43,7 @@ h1 {
 .wrap {
     max-width: 1140px;
     margin: auto;
+
 }
 
 .clear {
@@ -53,6 +54,17 @@ h1 {
     top: 50%;
     left: 5%;
     width: 100%;
+}
+#user_score {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    font-size: 40px;
 }
 
 
@@ -88,72 +100,29 @@ h1 {
 }
 
 
+
 .answer_item:hover {
     background-color: rgb(121, 240, 190);
 }
 
-/* .back {
-    width: 10%;
-    height: 30px;
-    background-color: white;
+
+
+
+
+#btn_retry {
     position: absolute;
-    top: 90%;
-    left: 37%;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 5px;
-    cursor: pointer;
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    padding: 10px 40px;
+    background-color: violet; 
 }
-
-.next {
-    width: 10%;
-    height: 30px;
-    background-color: white;
+#next {
     position: absolute;
-    top: 90%;
-    left: 53%;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 5px;
-    cursor: pointer;
+    top: 92%;
+    right: 0    ; 
+    transform: translate(-50%,-50%);
+    padding: 10px 30px;
+    background-color: aquamarine;
+    border-radius: 10px;
 }
-
-.sub {
-    width: 10%;
-    height: 30px;
-    background-color: white;
-    position: absolute;
-    top: 90%;
-    right: 5%;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 5px;
-    cursor: pointer;
-}
-
-.back:hover {
-    background-color: violet;
-}
-
-.next:hover {
-    background-color: violet;
-}
-
-.sub:hover {
-    background-color: orange;
-} */

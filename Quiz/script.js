@@ -55,8 +55,10 @@ function loadQues() {
         ans_1.innerText = fullQuestions[cur_question].first_answer;
         ans_2.innerText = fullQuestions[cur_question].second_answer;
         ans_3.innerText = fullQuestions[cur_question].third_answer;
-        ans_4.innerText = fullQuestions[cur_question].fourth_answer;
+        ans_4.innerText = fullQuestions[cur_question].fourth_swer;
+     
     }
+    document.getElementById('btn_retry').style.display = 'none';
 }
 loadQues();
 
@@ -69,21 +71,31 @@ function next(a) {
     //     calculateScore();
     // }else{
     loadQues();
-    calculateScore();
+    if (correct_choice.length == 5) {
+        calculateScore()
+    }
+  
 }
 function calculateScore() {
+    console.log(correct_choice);
     for (var i = 0; i < fullQuestions.length; i++) {
-        if (correct_choice[i] == fullQuestions[i].correct_answer) {
+        if (correct_choice[i] === fullQuestions[i].correct_answer) {
             score++
-            console.log(score)
         }
-
-    }   
-    if (score == fullQuestions.length) {
-        window.location.href('congrat.html')
-    } else {
-        ans_1.display = 'none';
     }
+    console.log(score)
+    if (score == 5){
+        window.location.href = "congrat.html";
+    }else {
+document.getElementById('user_score').innerText = 'Ban dat duoc:' + score + '/' + fullQuestions.length;
+document.getElementById('main_answer').style.display = 'none';
+document.getElementById('question').style.display = 'none';
+
+document.getElementById('btn_retry').style.display = 'block';
+    }
+}
+function retry() {
+    window.location.href = 'index.html'
 }
 
 
