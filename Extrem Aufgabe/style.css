@@ -1,0 +1,302 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.top_menu {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.wrap {
+    height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 15%;
+    height: 100%;
+    float: left;
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.main_menu {
+    width: 85%;
+    height: 100%;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu_item {
+    list-style-type: none;
+    float: left;
+    width: 16%;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.nav_menu {
+    float: right;
+    width: 58%;
+}
+
+.fa-shopping-cart {
+    padding-left: 22px;
+    font-size: 10px;
+    color: white
+}
+
+.fa-search {
+    padding-left: 20px;
+    font-size: 10px;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(242, 155, 139, 0.8), rgba(236, 212, 133, 0.8)), url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 800px;
+}
+
+.headlines {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.line_1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.line_2 {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.follow {
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 45%;
+}
+
+.button {
+    position: absolute;
+    top: 120%;
+    left: 39%;
+    color: white;
+    border: 5px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.percent_1 {
+    width: 13%;
+    height: 3px;
+    position: absolute;
+    top: 90%;
+    left: 18%;
+    background-color: white;
+}
+
+.percent_1_1 {
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(243, 101, 76);
+}
+
+.percent_2 {
+    width: 13%;
+    height: 3px;
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    background-color: white;
+}
+
+.percent_3 {
+    width: 13%;
+    height: 3px;
+    position: absolute;
+    top: 90%;
+    right: 35%;
+    background-color: white;
+}
+
+.percent_4 {
+    width: 13%;
+    height: 3px;
+    position: absolute;
+    top: 90%;
+    right: 18%;
+    background-color: white;
+}
+
+.slogan {
+    color: white;
+}
+
+span {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.headline_2 {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.headline_2_2 {
+    font-size: 35px;
+}
+
+.headline_2_3 {
+    margin-top: 200px;
+    color: grey
+}
+
+.line {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    width: 60px;
+    height: 4px;
+    background-color: rgb(243, 101, 76);
+    margin-top: 20px;
+}
+
+.img {
+    max-width: 30%;
+    float: left;
+}
+.image {
+    margin-top: 70px;
+}
+
+img {
+    width: 100%;
+}
+
+.img_1 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.field {
+    height: 100%;
+    width: 19.85%;
+    border-left: 1px solid white;
+    float: left;
+}
+
+#field_1 {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.info {
+    height: 200px;
+    background-color: rgb(120, 219, 214);
+}
+
+.clear {
+    clear: both;
+}
+
+.number {
+    font-size: 60px;
+    text-align: center;
+    color: white
+}
+
+.number_item {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.foot_line {
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+.underline {
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    background-color: rgb(243, 101, 76);
+    transform: translate(-50%, -50%)
+}
+
+.column_1 {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px grey solid;
+}
+
+.column_item {
+    width: 33%;
+    float: left;
+    margin-top: 40px;   
+}
+
+.content_item {
+    width: 90%;
+    float: left;
+}
+
+.far {
+    float: left;
+}
+.left {
+    width: 10%;
+    float: left;
+    height: 327px;
+}
+.column_item_2 {
+    width: 33%;
+    float: left;
+}
+.far , .fas {
+    color:  rgb(120, 219, 214);
+}
