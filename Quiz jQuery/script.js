@@ -94,7 +94,14 @@ $('#btn_retry').css('display' , 'block');
 function retry() {
     window.location.href = 'index.html'
 }
-
+function changeTheme() {
+    let a = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    let c = Math.floor(Math.random() * 256);
+    let bgColor = "rgb("+a+","+b+","+c+")"
+    console.log(bgColor);
+    $('html').css('background-color',bgColor);
+}
 
 
 
