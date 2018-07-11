@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mein Quiz!!</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="wrap">
+                <h1>Mein Quiz !!</h1>
+                <div id="container" class="container">
+
+                        <div id="question">
+                                <p id="question_content"></p>
+                        </div>
+                        <div  id="main_answer" class="main_answer">
+                                <button id="answer_content_1" class="answer_item" onclick="next(this)" value = "1" ></button>
+                        
+                        
+                                <button id="answer_content_2" class="answer_item" onclick="next(this)" value = "2"></button>
+                        
+                        
+                                <button id="answer_content_3" class="answer_item" onclick="next(this)" value = "3"></button>
+                        
+                        
+                                <button id="answer_content_4" class="answer_item" onclick="next(this)" value = "4"></button>
+                                <div class="clear"></div>
+                        </div>
+
+                       
+
+                      
+
+                        <div class="retry">
+                                <div class="score">
+                                        <p  id="user_score" class="my_score" ></p>
+                                </div>
+                                <div class="btn_retry">
+                                        <button id="btn_retry" onclick="retry()" >RETRY</button>
+                                </div>
+                                
+                        </div>      
+
+                </div>
+              
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
