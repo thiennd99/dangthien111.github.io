@@ -1,9 +1,12 @@
 function chooseCart(e){
-    console.log(e);
-    $(".e.front").css('transform','rotateY(0deg)');
-    $(".e.back").css('transform','rotateY(180deg)');
-    $(".e.front").css('backface-visibility','hidden');
-    $(".e.back").css('backface-visibility','hidden');
-    $(".e.front").css('transition','0.4s');
-    $(".e.back").css('transition','0.4s');
+    console.log(e)
+    console.log(  $(e).find('.front')    );
+    let a = $(e).find('.front');
+    let b = $(e).find('.back');
+    $(a).css('transform','rotateY(0deg)');
+    $(b).css('transform','rotateY(180deg)');
+    $(a).css('backface-visibility','hidden');
+    $(b).css('backface-visibility','hidden');
+    $(a).css('transition','0.4s');
+    $(b).css('transition','0.4s');
 }
