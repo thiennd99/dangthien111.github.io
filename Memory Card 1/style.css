@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: url('img/0.jpg') top center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.card {
+    width: 960px;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.card_item {
+    width: 100px;
+    height: 150px;
+    float: left;
+    padding-right: 20px;
+    position: relative;
+}
+
+.back_1, .back_2, .back_3, .back_4, .back_5, .back_6, .back_7, .back_8 {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card_item_1:hover, .card_item_2:hover, .card_item_3:hover, .card_item_4:hover, .card_item_5:hover, .card_item_6:hover, .card_item_7:hover, .card_item_8:hover .back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.front_1, .front_2, .front_3, .front_4, .front_5, .front_6, .front_7, .front_8 {
+    width: 100px;
+    height: 150px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.card_item_1:hover, .card_item_2:hover, .card_item_3:hover, .card_item_4:hover, .card_item_5:hover, .card_item_6:hover, .card_item_7:hover, .card_item_8:hover .f {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.clear {
+    clear: both;
+}
