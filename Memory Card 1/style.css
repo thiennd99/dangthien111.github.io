@@ -65,11 +65,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg); */
 }
 
 /* .card_item:hover .front{
@@ -85,7 +85,20 @@ img {
     height: 100%;
 }
 
-.front, .back {
+/* .front, .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+} */
+
+.clear {
+    clear: both;
+}
+.new_front, .new_back {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: 0.4s;
@@ -94,7 +107,17 @@ img {
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
 }
-
-.clear {
-    clear: both;
+.new_back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.new_front {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
 }
