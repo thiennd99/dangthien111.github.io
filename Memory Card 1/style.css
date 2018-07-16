@@ -100,7 +100,7 @@ img {
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
 }
-.flipped .new_back{
+.new_back{
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -108,7 +108,7 @@ img {
     -o-transform: rotateY(180deg);
 }
 
-.flipped .new_front {
+.new_front {
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);

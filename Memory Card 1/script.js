@@ -8,13 +8,6 @@ let imgArr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 imgArr = imgArr.concat(imgArr);
 shuffle(imgArr);
 
-// let c = b.attr('src', "00.jpg");
-
-// for (let i = 0; i < imgArr.length; i++) {
-//     $(a[i]).attr('src', imgArr[i]);   
-// }
-// let html = '';
-// for (let i = 0; i < imgArr.length;i++){}
 let html = '';
 for(let i = 0; i< imgArr.length; i++){
     html += '<div class = "card_item">' + '<div class="card__inner" data-name = "'+imgArr[i]+'">' + '<div class = "front"><img src = "img/'+imgArr[i]+'.jpg"></div>'
@@ -26,25 +19,27 @@ const card = $('.card__inner');
 let current = null;
 
 card.click(function (e) {
-    $(this).toggleClass('flipped');
-    $(this).css('pointer-events', 'none');
-    if (!current) {
-        current = $(this);
-        console.log(current);
-    } else {
-        if (current.attr('data-name') != $(this).attr('data-name')) {
-            setTimeout(function(){
-                current.toggleClass('flipped');
-                $(this).toggleClass('flipped');
-                current = null;
-            }, 500)
-        
-            
-        } else {
-            console.log('Giong nhau')
-            current = null
-        }
-    }
+    $(this).toggleClass('new_back');
+    $(this).toggleClass('new_front');
+    // $(this).css('pointer-events', 'none'); 
+    // if (!current) {
+    //     current = $(this);
+    //     // console.log(current);
+    // } else {
+    //     if (current.attr('data-name') != $(this).attr('data-name')) {
+    //         // setTimeout(function(){
+    //         //     current.toggleClass('flipped');
+    //         //     console.log(current.toggleClass('flipped'))
+    //         //     $(this).toggleClass('flipped');
+    //         //     current = null;
+    //         // }, 500)
+    //         console.log('khac nhau')
+    //         current = null
+    //     } else {
+    //         console.log('Giong nhau')
+    //         current = null
+    //     }
+    // }
 })
 
 function shuffle(array) {
