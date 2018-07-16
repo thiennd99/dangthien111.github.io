@@ -1,38 +1,62 @@
-const card = $('.card__inner')
+// window.onload = function(){
+//     $('.card__inner').css('pointer-events','none')
+    
+// }
 
 
+const card = $('.card__inner');
+let front_card = $('.card__inner').find('.front');
+let back_card = $('.card__inner').find('.back');
+let a = front_card.find('img');
+let b = back_card.find('img');
+let c = b.attr('src',"img/00.jpg");
+
+
+let imgArr = ['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.png','img/6.jpg','img/7.jpg','img/8.jpg','img/9.jpg','img/10.jpg','img/11.jpg','img/12.jpg','img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.png','img/6.jpg','img/7.jpg','img/8.jpg','img/9.jpg','img/10.jpg','img/11.jpg','img/12.jpg'];
+shuffle(imgArr)
+for(let i = 0; i <(imgArr.length);i++){
+    
+    $(a[i]).attr('src',imgArr[i])
+}   
+
+
+
+if(
 card.click(function(e){
-    alert('Bạn đã bị hack !!!')
     $(this).find('.back').addClass('new_back');
     $(this).find('.front').addClass('new_front');
-});
+    
+    // console.log(a)
+})) {
+    $(this).css('pointer-events','auto');
 
-// card.forEach(element => {
-//     element.addEventListener('click',function(e){
-//     this.classList.add('new_front');
-   
-//     // a.css('transform','rotateY(0deg)');
-//     // b.css('transform','rotateY(180deg)');
-//     // a.css('backface-visibility','hidden');
-//     // b.css('backface-visibility','hidden');
-//     // a.css('transition','0.4s');
-//     // b.css('transition','0.4s');
-// console.log(element)
-// });
+}else {
+    $(this).css('pointer-events','none');
+}
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
 
-// });
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
 
 
 
-// let a = $('.card__inner');
-// a.on('click', function(){
-// a.find('.front').css('transform','rotateY(0deg)');
-// a.find('.front').css('backface-visibility','hidden');
-// a.find('.front').css('transition','0.4s');
-// a.find('.back').css('transform','rotateY(180deg)');
-// a.find('.back').css('backface-visibility','hidden');
-// a.find('.back').css('transition','0.4s');
-// })
+
+
+
 
 
 
