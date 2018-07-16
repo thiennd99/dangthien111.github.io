@@ -94,13 +94,13 @@ img {
 .new_front, .new_back {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transition: 4s;
-    -webkit-transition: 4s;
-    -moz-transition: 4s;
-    -ms-transition: 4s;
-    -o-transition: 4s;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
-.new_back{
+.flipped .new_back{
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -108,7 +108,7 @@ img {
     -o-transform: rotateY(180deg);
 }
 
-.new_front {
+.flipped .new_front {
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);

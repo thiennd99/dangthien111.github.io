@@ -1,37 +1,55 @@
 // window.onload = function(){
 //     $('.card__inner').css('pointer-events','none')
-    
+
 // }
 
 
+let imgArr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+imgArr = imgArr.concat(imgArr);
+shuffle(imgArr);
+
+// let c = b.attr('src', "00.jpg");
+
+// for (let i = 0; i < imgArr.length; i++) {
+//     $(a[i]).attr('src', imgArr[i]);   
+// }
+// let html = '';
+// for (let i = 0; i < imgArr.length;i++){}
+let html = '';
+for(let i = 0; i< imgArr.length; i++){
+    html += '<div class = "card_item">' + '<div class="card__inner" data-name = "'+imgArr[i]+'">' + '<div class = "front"><img src = "img/'+imgArr[i]+'.jpg"></div>'
+    +'<div class="back"><img src="img/00.jpg"></div>'+'</div></div>'
+}
+$('.card').html(html);
+
 const card = $('.card__inner');
-let front_card = $('.card__inner').find('.front');
-let back_card = $('.card__inner').find('.back');
-let a = front_card.find('img');
-let b = back_card.find('img');
-let c = b.attr('src',"img/00.jpg");
+let current = null;
 
-
-let imgArr = ['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.png','img/6.jpg','img/7.jpg','img/8.jpg','img/9.jpg','img/10.jpg','img/11.jpg','img/12.jpg','img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.png','img/6.jpg','img/7.jpg','img/8.jpg','img/9.jpg','img/10.jpg','img/11.jpg','img/12.jpg'];
-shuffle(imgArr)
-for(let i = 0; i <(imgArr.length);i++){
-    $(a[i]).attr('src',imgArr[i]);
-}   
-
-
-
-
-card.click(function(e){
-    $(this).find('.back').addClass('new_back');
-    $(this).find('.front').addClass('new_front');
-    $(this).css('pointer-events','none');
-    
-}) 
-
-   
+card.click(function (e) {
+    $(this).toggleClass('flipped');
+    $(this).css('pointer-events', 'none');
+    if (!current) {
+        current = $(this);
+        console.log(current);
+    } else {
+        if (current.attr('data-name') != $(this).attr('data-name')) {
+            setTimeout(function(){
+                current.toggleClass('flipped');
+                $(this).toggleClass('flipped');
+                current = null;
+            }, 500)
+        
+            
+        } else {
+            console.log('Giong nhau')
+            current = null
+        }
+    }
+})
 
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    var currentIndex = array.length,
+        temporaryValue, randomIndex;
 
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
@@ -44,18 +62,8 @@ function shuffle(array) {
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
-  }
+    }
 
-  return array;
+    return array;
 }
-
-
-
-
-
-
-
-
-
-
 
