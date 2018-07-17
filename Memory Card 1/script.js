@@ -9,9 +9,9 @@ imgArr = imgArr.concat(imgArr);
 shuffle(imgArr);
 
 let html = '';
-for(let i = 0; i< imgArr.length; i++){
-    html += '<div class = "card_item">' + '<div class="card__inner" data-name = "'+imgArr[i]+'">' + '<div class = "front"><img src = "img/'+imgArr[i]+'.jpg"></div>'
-    +'<div class="back"><img src="img/00.jpg"></div>'+'</div></div>'
+for (let i = 0; i < imgArr.length; i++) {
+    html += '<div class = "card_item">' + '<div class="card__inner" data-name = "' + imgArr[i] + '">' + '<div class = "front"><img src = "img/' + imgArr[i] + '.jpg"></div>' +
+        '<div class="back"><img src="img/00.jpg"></div>' + '</div></div>'
 }
 $('.card').html(html);
 
@@ -19,27 +19,38 @@ const card = $('.card__inner');
 let current = null;
 
 card.click(function (e) {
-    $(this).toggleClass('new_back');
-    $(this).toggleClass('new_front');
-    // $(this).css('pointer-events', 'none'); 
-    // if (!current) {
-    //     current = $(this);
-    //     // console.log(current);
-    // } else {
-    //     if (current.attr('data-name') != $(this).attr('data-name')) {
-    //         // setTimeout(function(){
-    //         //     current.toggleClass('flipped');
-    //         //     console.log(current.toggleClass('flipped'))
-    //         //     $(this).toggleClass('flipped');
-    //         //     current = null;
-    //         // }, 500)
-    //         console.log('khac nhau')
-    //         current = null
-    //     } else {
-    //         console.log('Giong nhau')
-    //         current = null
-    //     }
-    // }
+    const _this = this;
+    $(this).find('.back').toggleClass('new_back');
+    $(this).find('.front').toggleClass('new_front');
+    $(this).css('pointer-events', 'none');
+    if (!current) {
+        current = $(this);
+        // console.log(current);
+    } else {
+        if (current.attr('data-name') != $(this).attr('data-name')) {
+            setTimeout(function () {
+                current.find('.front').toggleClass('new_front');
+                current.find('.back').toggleClass('new_back');
+                $(_this).find('.front').toggleClass('new_front');
+                $(_this).find('.back').toggleClass('new_back');
+                current.find('.front').css('transition', '0.4s');
+                current.find('.back').css('transition', '0.4s');
+                $(_this).find('.front').css('transition', '0.4s');
+                $(_this).find('.back').css('transition', '0.4s');
+                $(_this).css('pointer-events', 'auto');
+                current.css('pointer-events', 'auto');
+                current = null;
+            }, 500)
+        } else {
+            setTimeout(function () {
+                current.css('opacity', '0')
+                $(_this).css('opacity', '0')
+                current.css('transition', '0.4s')
+                $(_this).css('transition', '0.4s')
+                current = null
+            }, 500)
+        }
+    }
 })
 
 function shuffle(array) {
@@ -61,4 +72,3 @@ function shuffle(array) {
 
     return array;
 }
-
