@@ -1,26 +1,58 @@
-// window.onload = function(){
-//     $('.card__inner').css('pointer-events','none')
+window.onload = function () {
+    $('.card__inner').css('pointer-events', 'none')
+    $('.alert_1').show();
+    $('.pro').attr('max',remainingTime)
+    $('.pro').attr('value',remainingTime)
+}
 
-// }
+
 
 
 let imgArr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 imgArr = imgArr.concat(imgArr);
 shuffle(imgArr);
-let remainingTime = 30;
+
 let html = '';
 for (let i = 0; i < imgArr.length; i++) {
     html += '<div class = "card_item">' + '<div class="card__inner" data-name = "' + imgArr[i] + '">' + '<div class = "front"><img src = "img/' + imgArr[i] + '.jpg"></div>' +
-        '<div class="back"><img src="img/00.jpg"></div>' + '</div></div>' 
+        '<div class="back"><img src="img/00.jpg"></div>' + '</div></div>'
 }
 $('.card').html(html);
-// let run = setInterval(function(){
-//     remainingTime--;
-//     console.log(remainingTime)
-//     if(remainingTime==0){
-//         clearInterval(run)
-//         alert('ngu')}
-// },1000)
+let count = 0;
+let remainingTime = 30;
+
+let run;
+
+function normal() {
+    $('.card__inner').css('pointer-events', 'auto')
+    $('.alert').hide();
+  
+run = setInterval(function(){
+    remainingTime--;
+    document.getElementById('pro').value = remainingTime;
+    if(remainingTime==0){
+        clearInterval(run);
+        $('.card__inner').css('pointer-events', 'none');
+        $('.alert_lose').show();
+    }
+},1000)
+
+};
+
+function hard() {
+    $('.card__inner').css('pointer-events', 'auto')
+    $('.alert').hide();
+    run = setInterval(function(){
+        remainingTime--;
+        document.getElementById('pro').value = remainingTime;
+        if(remainingTime==0){
+            clearInterval(run)
+            $('.alert_lose').show();
+            $('.card__inner').css('pointer-events', 'none');
+        }
+    },500)
+
+};
 const card = $('.card__inner');
 let current = null;
 
@@ -47,20 +79,25 @@ card.click(function (e) {
                 $(_this).find('.back').css('transition', '0.4s');
                 document.getElementById('falsch').play();
                 current = null;
-                setTimeout(function(){
-                    $('.card__inner').css('pointer-events', 'auto'); 
-               },400)
+                setTimeout(function () {
+                    $('.card__inner').css('pointer-events', 'auto');
+                }, 400)
             }, 1000)
             $('.card__inner').css('pointer-events', 'none');
         } else {
             setTimeout(function () {
-                current.css('opacity', '0')
-                $(_this).css('opacity', '0')
-                current.css('transition', '0.4s')
-                $(_this).css('transition', '0.4s')
-              
-                current = null
+                current.css('opacity', '0');
+                $(_this).css('opacity', '0');
+                current.css('transition', '0.4s');
+                $(_this).css('transition', '0.4s');
+                current = null;
                 document.getElementById('richtig').play();
+                count++;
+                if (count === 12) {
+                    $('.alert_win').show();
+                    clearInterval(run)
+                }
+                
             }, 500)
         }
     }
@@ -84,4 +121,7 @@ function shuffle(array) {
     }
 
     return array;
+}
+function replay() {
+    window.location.href = 'index.html'
 }
