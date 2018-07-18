@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <progress id="pro" max="30" value="30"></progress>
+
+        <div class="card">
+
+
+            <div class="clear"></div>
+        </div>
+        
+        <div class="alert alert_1">
+            <p class="line">Choose Your Mode</p>
+            <div class="main_mode">
+                <div class="wrap_mode">
+                    <button class="mode nor_mode" onclick="normal()">NORMAL</button>
+                    <button class="mode har_mode" onclick="hard()">HARD</button>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert_win">
+            <p class="line">Win CMNR !!!</p>
+            <div class="main_mode">
+                <div class="wrap_mode">
+                    <button class="mode" id="win_mode" onclick="replay()">REPLAY</button>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert_lose">
+            <p class="line">Du bist zu dumm!!</p>
+            <div class="main_mode">
+                <div class="wrap_mode">
+                    <button class="mode" id="lose_mode" onclick="replay()">REPLAY</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <audio id="richtig" src="richtig.mp3"></audio>
+    <audio id="falsch" src="falsch.mp3"></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
