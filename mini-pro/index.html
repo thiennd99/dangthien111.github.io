@@ -15,20 +15,30 @@
     <div class="bg"></div>
     <div class="navigation">
         <div class="wrap">
-            <div class="logo"><img  id="logo_img" src="logo.png" alt=""></div>
+            <div class="logo">
+                <img id="logo_img" src="logo.png" alt="">
+            </div>
             <div class="nav_menu">
-                <ul class="main_menu" >
-                    <li class="menu_item current"><a href="#descr">Description</a></li>
-                    <li class="menu_item"><a href="#pro">Program</a></li>
-                    <li class="menu_item"><a href="#speak">Speakers</a></li>
-                    <li class="menu_item"><a href="#regis">Register</a></li>
+                <ul class="main_menu">
+                    <li class="menu_item current">
+                        <a href="#descr">Description</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#pro">Program</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#speak">Speakers</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#regis">Register</a>
+                    </li>
                     <div class="clear"></div>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div  id="descr" class="descr">
+    <div id="descr" class="descr">
         <h2 class="wow zoomInUp" data-wow-delay="0.8s">Description</h2>
         <p class="wow zoomInUp" data-wow-delay="0.8s">Demo about STEM, Robot (Lego), Arduino Tech Robot STEM 2018, Saturday, 28/7/2018 from 2:30PM to 5:30PM
         </p>
@@ -71,7 +81,7 @@
             <img class="wow bounceInDown " src="5.png" data-wow-delay="1s">
             <div class="name_person wow bounceInDown" data-wow-delay="1s">Mr. Hào Hững Hờ</div>
         </div>
-        <div class="person" >
+        <div class="person">
             <img class="wow bounceInLeft" src="5.png" data-wow-delay="1.5s">
             <div class="name_person wow bounceInLeft" data-wow-delay="1.5s">Mr. Hào Hững Hờ</div>
         </div>
@@ -83,13 +93,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <iframe
-                width="600"
-                height="450"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=
-                AIzaSyCven_4xwlm5IhKgygnC1YWCEqKF6eA8EE&q=Space+Needle,Seattle+WA" allowfullscreen>
-              </iframe>
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE6kSQrUVzTYRBZZqt1iccP4&key=AIzaSyCQKiLbvK4KuBCMIiXhwG04Tupcy7ziDsw" allowfullscreen></iframe> 
             </div>
             <div class="column">
                 <form action="/action_page.php">
@@ -110,8 +114,12 @@
             </div>
         </div>
     </div>
-    <div class="to_top"><a href="#"><img src="totop.png" alt=""></a></div>
-   
+    <div class="to_top">
+        <a href="#">
+            <img src="totop.png" alt="">
+        </a>
+    </div>
+
 
     <script>
         var slideIndex = 0;
@@ -125,15 +133,16 @@
                 slides[i].style.display = "none";
             }
             slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3500); 
+            setTimeout(showSlides, 3500);
         }
-
     </script>
     <script>
         new WOW().init();
@@ -143,9 +152,14 @@
         function myMap() {
             var myCenter = new google.maps.LatLng(51.508742, -0.120850);
             var mapCanvas = document.getElementById("map");
-            var mapOptions = { center: myCenter, zoom: 12 };
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12
+            };
             var map = new google.maps.Map(mapCanvas, mapOptions);
-            var marker = new google.maps.Marker({ position: myCenter });
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
             marker.setMap(map);
         }
     </script>
