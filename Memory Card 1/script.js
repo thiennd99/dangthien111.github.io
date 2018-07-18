@@ -1,8 +1,8 @@
 window.onload = function () {
     $('.card__inner').css('pointer-events', 'none')
     $('.alert_1').show();
-    $('.pro').attr('max',remainingTime)
-    $('.pro').attr('value',remainingTime)
+    $('.pro').attr('max', remainingTime)
+    $('.pro').attr('value', remainingTime)
 }
 
 
@@ -19,6 +19,7 @@ for (let i = 0; i < imgArr.length; i++) {
 }
 $('.card').html(html);
 let count = 0;
+
 let remainingTime = 30;
 
 let run;
@@ -26,33 +27,34 @@ let run;
 function normal() {
     $('.card__inner').css('pointer-events', 'auto')
     $('.alert').hide();
-  
-run = setInterval(function(){
-    remainingTime--;
-    document.getElementById('pro').value = remainingTime;
-    if(remainingTime==0){
-        clearInterval(run);
-        $('.card__inner').css('pointer-events', 'none');
-        $('.alert_lose').show();
-    }
-},1000)
+
+    run = setInterval(function () {
+        remainingTime--;
+        document.getElementById('pro').value = remainingTime;
+        if (remainingTime == 0) {
+            clearInterval(run);
+            $('.card__inner').css('pointer-events', 'none');
+            $('.alert_lose').show();
+        }
+    }, 1000)
 
 };
 
 function hard() {
     $('.card__inner').css('pointer-events', 'auto')
     $('.alert').hide();
-    run = setInterval(function(){
+    run = setInterval(function () {
         remainingTime--;
         document.getElementById('pro').value = remainingTime;
-        if(remainingTime==0){
+        if (remainingTime == 0) {
             clearInterval(run)
             $('.alert_lose').show();
             $('.card__inner').css('pointer-events', 'none');
         }
-    },500)
+    }, 500)
 
 };
+
 const card = $('.card__inner');
 let current = null;
 
@@ -81,7 +83,7 @@ card.click(function (e) {
                 current = null;
                 setTimeout(function () {
                     $('.card__inner').css('pointer-events', 'auto');
-                }, 400)
+                }, 100)
             }, 1000)
             $('.card__inner').css('pointer-events', 'none');
         } else {
@@ -95,9 +97,8 @@ card.click(function (e) {
                 count++;
                 if (count === 12) {
                     $('.alert_win').show();
-                    clearInterval(run)
+                    clearInterval(run);
                 }
-                
             }, 500)
         }
     }
@@ -122,6 +123,7 @@ function shuffle(array) {
 
     return array;
 }
+
 function replay() {
     window.location.href = 'index.html'
 }
