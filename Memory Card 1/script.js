@@ -83,7 +83,7 @@ card.click(function (e) {
                 current = null;
                 setTimeout(function () {
                     $('.card__inner').css('pointer-events', 'auto');
-                }, 100)
+                }, 400)
             }, 1000)
             $('.card__inner').css('pointer-events', 'none');
         } else {
@@ -93,13 +93,18 @@ card.click(function (e) {
                 current.css('transition', '0.4s');
                 $(_this).css('transition', '0.4s');
                 current = null;
+                setTimeout(function () {
+                    $('.card__inner').css('pointer-events', 'auto');
+                }, 400)
                 document.getElementById('richtig').play();
                 count++;
                 if (count === 12) {
                     $('.alert_win').show();
                     clearInterval(run);
                 }
-            }, 500)
+             
+            }, 1000)
+            $('.card__inner').css('pointer-events', 'none');
         }
     }
 })
