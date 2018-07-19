@@ -1,0 +1,25 @@
+body {
+    background-color: antiquewhite;
+}
+.headline {
+    text-align: center;
+    color: red
+}
+.form {
+    margin: auto;
+    width: 30%;
+
+}
+
+#name, #birthday, #address, #phonenumber, #email, #password, #gender{
+    padding: 10px;
+    width: 100%;
+}
+#submit {
+    padding: 10px;
+    width: 104.5%;
+    margin-top: 10px;
+}
+input:focus {
+    background-color: lightblue;
+}
