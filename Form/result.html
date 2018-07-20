@@ -20,14 +20,36 @@
     <p>Mật khẩu: <span id="password"></span></p>
 </div>
 
-
-
-
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    
+        let a = location.search;
+        function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {}, i, n, v, nv;
+
+    if (query === url || query === "") return;
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=", 2);
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) parms[n] = [];
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    $('#name_1').html(parms.allname);
+    $('#birthday').html(parms.birthday);
+    $('#gender').html(parms.gender);
+    $('#address').html(parms.address);
+    $('#phonenumber').html(parms.phone);
+    $('#email').html(parms.email);
+    $('#password').html(parms.password);
+console.log(parms)
+}
+parseURLParams(a);
     </script>
 </body>
 </html>
