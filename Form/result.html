@@ -22,7 +22,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        let a = location.search;
+       
         function parseURLParams(url) {
     var queryStart = url.indexOf("?") + 1,
         queryEnd   = url.indexOf("#") + 1 || url.length + 1,
@@ -49,6 +49,7 @@
     $('#password').html(parms.password);
 console.log(parms)
 }
+let a = location.search;
 parseURLParams(a);
     </script>
 </body>
