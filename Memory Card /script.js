@@ -6,16 +6,14 @@ window.onload = function () {
 }
 
 
-
-
 let imgArr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 imgArr = imgArr.concat(imgArr);
 shuffle(imgArr);
 
 let html = '';
 for (let i = 0; i < imgArr.length; i++) {
-    html += '<div class = "card_item">' + '<div class="card__inner" data-name = "' + imgArr[i] + '">' + '<div class = "front"><img src = "img/' + imgArr[i] + '.jpg"></div>' +
-        '<div class="back"><img src="img/00.jpg"></div>' + '</div></div>'
+    html += '<div class = "card_item">' + '<div class="card__inner" data-name = "' + imgArr[i] + '">' + '<div class="back"><img src = "img/' + imgArr[i] + '.jpg"></div>' +
+    '<div class = "front"><img src="img/00.jpg"></div>' + '</div></div>'
 }
 $('.card').html(html);
 let count = 0;
