@@ -82,7 +82,7 @@ card.click(function (e) {
                 setTimeout(function () {
                     $('.card__inner').css('pointer-events', 'auto');
                 }, 400)
-            }, 1000)
+            }, 400)
             $('.card__inner').css('pointer-events', 'none');
         } else {
             setTimeout(function () {

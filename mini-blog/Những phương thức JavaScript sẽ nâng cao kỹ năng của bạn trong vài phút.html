@@ -64,10 +64,7 @@
             text-decoration: none;
         
         }
-        .toc-h4 {
-            padding: .3em 1.4em;
-        }
-
+        
 
 
         .hisella-messages {
@@ -116,6 +113,17 @@
     <script async="" src="./Những phương thức JavaScript sẽ nâng cao kỹ năng của bạn trong vài phút_files/fbevents.js"></script>
     <script async="" src="./Những phương thức JavaScript sẽ nâng cao kỹ năng của bạn trong vài phút_files/analytics.js"></script>
     <script>
+        let title = $('h2');
+        let new_title = [];
+       
+        for(let i = 0;i < title.length;i++){
+            let leer = title[i].text();
+            if(leer !== ""){
+               
+                new_title.push(leer);
+            }
+        }
+        console.log(title)
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
@@ -2784,7 +2792,7 @@
                             </section>
                             <section class="scrollspy" id="second">
 
-                                <h2 id="second">2. for...of&nbsp;iterator</h2>
+                                <h2>2. for...of&nbsp;iterator</h2>
 
                                 <p>
                                     <strong>for...of</strong>&nbsp;câu lệnh vòng lặp/ lặp lại qua các collection, và cung cấp cho
@@ -3363,43 +3371,14 @@ weeklyExpenses.reduce((first, last) =&gt; first + last);
                         <p itemprop="description">Trainer at Techmaster VietNam</p>
                     </div>
                     <div class="content">
-                        <h6 class="active toc-h3">
-                            <a href="#intro">Giới thiệu mở đầu</a>
-                        </h6>
-                        <h6 class="toc-h3">
-                            <a href="#method">Các phương thức chúng ta sẽ tìm hiểu</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#first">1. Spread operator</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#second">2. for...of iterator</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#third">3. Phương thức Includes()</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#fourth">4. Phương thức some()</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#fifth">5. Phương thức every()</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#sixth">6. Phương thức filter()</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#seventh">7. Phương thức map()</a>
-                        </h6>
-                        <h6 class="toc-h4">
-                            <a href="#eighth">8. Phương thức reduce()</a>
-                        </h6>
+                        
                     </div>
                 </div>
                 <div class="follow" style=' position: fixed;
 
                 right: 1.5em;
                 
-                bottom: 1.5em;
+                bottom: 5em;
                 
                 top: auto;
                 
@@ -3864,9 +3843,13 @@ weeklyExpenses.reduce((first, last) =&gt; first + last);
         }
     </script>
     <script>
+       
+        
+    
         $(window).bind('scroll', function () {
             var currentTop = $(window).scrollTop();
             var elems = $('.scrollspy');
+            
             elems.each(function (index) {
                 var elemTop = $(this).offset().top;
                 var elemBottom = elemTop + $(this).height();
@@ -3877,7 +3860,7 @@ weeklyExpenses.reduce((first, last) =&gt; first + last);
                 }
             })
             let show = $('#rcm-hireme').offset().top;
-            
+           
             if(currentTop >= show - 500){
                 $('.follow').css('display','block');
                 $('.follow').css('opacity','1');
@@ -3885,9 +3868,10 @@ weeklyExpenses.reduce((first, last) =&gt; first + last);
             }else {
                 $('.follow').css('opacity','0')
             }
+            
         });
         function dismiss(){
-            $(".follow").css('display','none')
+            $(".follow").css('display','none');
         }
         $('h6:nth-child(1) a').click(function(e){
             e.preventDefault();
@@ -3939,7 +3923,7 @@ weeklyExpenses.reduce((first, last) =&gt; first + last);
             $('html, body').animate( {scrollTop:$('#eighth').offset().top} ,400)
 
         })
-
+      
     </script>
 
 
