@@ -1,19 +1,33 @@
 body {
     background-color: antiquewhite;
+    background: url(banner.jpg) top center no-repeat;
+    background-size: cover;
+    font-family: 'Modern Antiqua', cursive;
+}
+button{
+    width: 106%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    margin-left: 10px;
 }
 .headline {
     text-align: center;
-    color: red
+    color: #dbeeb9;
 }
 .form {
     margin: auto;
     width: 30%;
 
 }
+label {
+    color: #b5f278;
+}
 
 #name, #birthday, #address, #phonenumber, #email, #password, #gender{
     padding: 10px;
     width: 100%;
+    margin: 10px;
 }
 #submit {
     padding: 10px;

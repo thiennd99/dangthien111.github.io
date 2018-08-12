@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
     <title>Basic Form</title>
 </head>
 <body>
@@ -26,9 +27,13 @@
         <input type="email" name="email" id="email"><br>
         <label for="password">Mật khẩu:</label><br>
         <input type="password" name="password" id="password"><br>
-        <input type="submit" id="submit" >
+        <button>Submit</button>
     </form>
     </div>
-    
+        <script>
+            let a = document.getElementById('submit').value;
+            console.log(a);
+            a.style.fontFamily = 'Modern Antiqua';
+        </script>
 </body>
 </html>
