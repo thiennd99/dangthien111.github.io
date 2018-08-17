@@ -255,6 +255,9 @@ ol, ul, li {
     
 
 }
+.tab {
+    position: relative;
+}
 .tab-nav li div {
     border-radius: 50%;
     line-height: 75px;
@@ -272,6 +275,10 @@ ol, ul, li {
     padding: 6px 12px;
     -webkit-animation: fadeEffect .5s;
     animation: fadeEffect .5s;
+}
+.wrap-tab {
+    width: 42.5%;
+    margin: auto;
 }
 .box-line {
     animation: fadeEffect 5s;
@@ -360,7 +367,7 @@ img {
 }
 .price-line {
     color: white;
-    padding-top: 20px;
+    padding-top: 70px;
 }
 .price-line::after {
     content: "";
@@ -417,7 +424,7 @@ img {
 .price-item {
     width:25% ;
     height: 86%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     float: left;
     margin: 4%;
     text-align: center;
@@ -432,7 +439,7 @@ img {
     /* background-color: rgba(255, 255, 255, 0.4); */
 }
 .price-content p {
-    padding: 5%;
+    padding: 5px;
     font-weight: 500;
     font-size: 1.15em
 }
@@ -658,14 +665,15 @@ img {
   opacity: 1;
 }
 section {
-    margin-left: 47%;
-    margin-top: 5%;
+    margin-left: 50%;
+    margin-top: 6%;
 }
 .location {
-    width: 100%;
+    width: 90%;
     height: 800px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    margin: auto;
     margin-top: 200px;
   }
 .location h1::after {
@@ -718,34 +726,34 @@ section {
     width: 80%;
     margin: auto;
 }
-.md-form i{
+.my_form i{
     margin-top: 18px;
-    font-size: 2.5em;
+    font-size: 2.5em !important;
 }
-.md-form {
+.my_form {
     width: 40%;
     margin: auto;
-    margin-top: 2s0px;
+    margin-top: 20px;
     
 }
-.md-form input {
+#inputValidationEx {
     margin-left: 4rem;
     width: calc(60% - 3rem) !important;
     display: inline-block;
 }
-.md-form label {
-    margin-left: 4rem;
+.my_form label {
+    margin-left: 4rem !important;
     margin-top: 10px;
 }
-/* .md-form button {
+/* .my_form button {
     float: left;
 } */
-.md-form button {
+.my_form button {
     margin-top: 10px;
     margin-bottom: 0 !important;
 }
 .img {
-    width: 40%;
+    width: 30%;
     margin: auto;
     margin-top: 100px;
 }
