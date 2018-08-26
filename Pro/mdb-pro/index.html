@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Co-work</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -40,7 +40,7 @@
                 <!-- Logo -->
                 <li>
                     <div class="logo-wrapper waves-light">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="my_img/logo.png" class="img-fluid flex-center">
                         </a>
                     </div>
@@ -122,7 +122,7 @@
                             </div> -->
                         </li>
                         <li>
-                            <a class="collapsible-header waves-effect arrow-r">
+                            <a class="collapsible-header waves-effect arrow-r" href="pricing.html">
                                 <i class="fa fa-eye" style="margin-right: 11px"></i> PRICING
                                 <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
                             </a>
@@ -138,6 +138,13 @@
                             </div> -->
                         </li>
                         <li>
+                                <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
+                                    
+                                    <i class="fab fa-blogger-b" style="margin-right: 11px"></i> BLOG
+                                    <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                                </a>
+                        </li>
+                        <li>
                             <a class="collapsible-header waves-effect arrow-r">
                                 <!-- <i class="fa fa-envelope-o"></i> -->
                                 <i class="fa fa-envelope" style="margin-right: 11px"></i> CONTACT US
@@ -150,14 +157,16 @@
                                         <a class="collapsible-header waves-effect arrow-r">
 
 
-                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 2, Alley 59, Ha Noi</a>
+                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 2, Alley
+                                            59, Ha Noi</a>
 
                                         </a>
                                     </li>
                                     <li>
 
                                         <a class="collapsible-header waves-effect arrow-r">
-                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 64, Alley 49, Lao Cai</a>
+                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 64, Alley
+                                            49, Lao Cai</a>
                                     </li>
 
                                     <li>
@@ -184,8 +193,10 @@
 
 
                     </ul>
-                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px">Log In</button>
-                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px">Sign Up</button>
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px" data-toggle="modal" data-target="#elegantModalForm">Sign
+                        In</button>
+                    <button onclick="window.location.href='signUp.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px">Sign
+                        Up</button>
                     <div class="clear" style="clear: both"></div>
                 </li>
                 <!-- /. Side navigation links -->
@@ -237,6 +248,7 @@
         </ul>
         </nav>   -->
         <!-- /.Navbar -->
+
     </header>
     <!--/.Double navigation-->
 
@@ -251,7 +263,7 @@
                         <span>AFTER HOME</span>
                     </p>
                     <a href="#">
-                        <button type="button" class="my_btn btn-brown waves-effect waves-light">BOOK NOW</button>
+                        <button onclick="window.location.href='booking.html'" type="button" class="my_btn btn-brown waves-effect waves-light">BOOK NOW</button>
                     </a>
                 </div>
 
@@ -268,40 +280,41 @@
         <div class="body">
             <div class="introduce">
                 <h3 class="line">WE ARE COWORK</h3>
-                <p class="descript">COWORK is open coworking space that hosted 700+ entrepreneurs and freelancers. We support their growth through
-                    classes, events and partnerships. Whether you are an independent, an entrepreneur building a startup,
-                    a small business owner or a corporate innovator, COWORK is a place to imagine and pursue what’s possible.</p>
+                <p class="descript">COWORK is open coworking space that hosted 700+ entrepreneurs and freelancers. We support
+                    their growth through classes, events and partnerships. Whether you are an independent, an entrepreneur
+                    building a startup, a small business owner or a corporate innovator, COWORK is a place to imagine and
+                    pursue what’s possible.</p>
             </div>
             <div class="slide-show">
                 <div class="tab">
-                    <ul class="tab-nav d-flex justify-content-center">
+                    <ul class="tab-nav">
                         <!-- <div class="wrap-tab"> -->
-                                <li class="tablinks" onclick="openCity(event,'1')">
-                                        <div>
-                                            <i class="fas fa-users"></i>
-                                        </div>
-                                    </li>
-                                    <li class="tablinks" onclick="openCity(event,'2')">
-                                        <div>
-                                            <i class="far fa-bell-slash"></i>
-                                        </div>
-                                    </li>
-                                    <li class="tablinks" onclick="openCity(event,'3')">
-                                        <div>
-                                            <i class="fas fa-chart-line"></i>
-                                        </div>
-                                    </li>
-                                    <li class="tablinks" onclick="openCity(event,'4')">
-                                        <div>
-                                            <i class="fas fa-utensils"></i>
-                                        </div>
-                                    </li>
-                                    <li class="tablinks" onclick="openCity(event,'5')">
-                                        <div>
-                                            <i class="fas fa-bed"></i>
-                                        </div>
-                                    </li>
-                                    <div class="clear"></div>
+                        <li class="tablinks" onclick="openCity(event,'1')" id="defaultOpen">
+                            <div>
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </li>
+                        <li class="tablinks" onclick="openCity(event,'2')">
+                            <div>
+                                <i class="far fa-bell-slash"></i>
+                            </div>
+                        </li>
+                        <li class="tablinks" onclick="openCity(event,'3')">
+                            <div>
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </li>
+                        <li class="tablinks" onclick="openCity(event,'4')">
+                            <div>
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </li>
+                        <li class="tablinks" onclick="openCity(event,'5')">
+                            <div>
+                                <i class="fas fa-bed"></i>
+                            </div>
+                        </li>
+                        <div class="clear"></div>
                         <!-- </div> -->
                     </ul>
                 </div>
@@ -573,7 +586,7 @@
 
                             </p>
                         </div>
-                        <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
+                        <button onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
                     </div>
                     <div class="price-item">
                         <div class="title">Business Center</div>
@@ -593,7 +606,7 @@
                                 <b>*From 17:30 to 21:30</b>
                             </p>
                         </div>
-                        <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
+                        <button onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
 
                     </div>
                     <div class="price-item">
@@ -615,7 +628,7 @@
                                 <b>*From 17:30 to 21:30</b>
                             </p>
                         </div>
-                        <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
+                        <button  onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
 
                     </div>
                     <div class="clear"></div>
@@ -689,6 +702,34 @@
                         </div>
                         <div class="clear"></div>
                     </div>
+                     <!--Pagination dark-->
+        <nav>
+                <ul class="pagination pg-dark justify-content-center">
+                    <!--Arrow left-->
+                    <li class="page-item">
+                        <a class="page-link" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+    
+                    <!--Numbers-->
+                    <li class="page-item active"><a class="page-link">1</a></li>
+                    <li class="page-item"><a class="page-link">2</a></li>
+                    <li class="page-item"><a class="page-link">3</a></li>
+                    <li class="page-item"><a class="page-link">4</a></li>
+                    <li class="page-item"><a class="page-link">5</a></li>
+    
+                    <!--Arrow right-->
+                    <li class="page-item">
+                        <a class="page-link" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--/Pagination dark-->
 
                 </div>
             </div>
@@ -707,10 +748,10 @@
 
                 <section class="regular slider">
                     <div>
-                        <img src="my_img/twitter-logo.svg">
+                        <img src="my_img/ebay-coworking.svg">
                     </div>
                     <div>
-                        <img src="my_img/ebay-coworking.svg">
+                        <img src="my_img/twitter-logo.svg">
                     </div>
                     <div>
                         <img src="my_img/db-coworking.svg">
@@ -746,10 +787,64 @@
                     <label for="inputValidationEx" data-error="wrong" data-success="right">Type your email</label>
                     <button type="button" class="btn btn-brown">Subscribe</button>
                 </div>
-               <div class="img">
+                <div class="img-footer">
                     <img src="my_img/logo.png" alt="">
-               </div>
+                </div>
+                <p class="copyright">Copyright © 2018 CoWork. All rights reserved. </p>
             </div>
+               <!-- Modal -->
+               <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <!--Content-->
+                        <div class="modal-content form-elegant">
+                            <!--Header-->
+                            <div class="modal-header text-center">
+                                <h3 style="color:white" class="modal-title w-100 font-weight-bold my-3" id="myModalLabel" ><strong>Sign
+                                        in</strong></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body mx-4">
+                                <!--Body-->
+                                <div class="md-form mb-5">
+                                    <input type="email" id="Form-email1" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                                </div>
+    
+                                <div class="md-form pb-3">
+                                    <input type="password" id="Form-pass1" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                                    <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#" class=" ml-1" style="color: #6d4d41">
+                                        Password?</a></p>
+                                </div>
+    
+                                <div class="text-center mb-3">
+                                    <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign in</button>
+                                </div>
+                                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
+                                    in with:</p>
+    
+                                <div class="row my-3 d-flex justify-content-center">
+                                    <!--Facebook-->
+                                    <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center" style="color: #6d4d41"></i></button>
+                                    <!--Twitter-->
+                                    <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter" style="color: #6d4d41"></i></button>
+                                    <!--Google +-->
+                                    <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g" style="color: #6d4d41"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer mx-5 pt-3 mb-1">
+                                <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="ml-1" style="color: #6d4d41">
+                                    Sign Up</a></p>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!-- Modal -->
 
     </main>
     <!--Main Layout-->
@@ -779,7 +874,7 @@
     </script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
-        window.onload = openCity(event, '1')
+        document.getElementById('defaultOpen').click();
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -789,6 +884,7 @@
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
+
             }
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";

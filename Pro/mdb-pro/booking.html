@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://namboss.blob.core.windows.net/huong/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://namboss.blob.core.windows.net/huong/mdb.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/booking.css">
+
+</head>
+
+<body class="fixed-sn light-blue-skin">
+
+    <!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-4 fixed custom-scrollbar ps">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper waves-light">
+                        <a href="index.html">
+                            <img src="my_img/logo.png" class="img-fluid flex-center">
+                        </a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <li>
+                            <a href="#" class="icons-sm fb-ic">
+                                <!-- <i class="fab fa-facebook"> </i> -->
+                                <i class="fab fa-facebook-f"></i>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-sm pin-ic">
+                                <!-- <i class="fa fa-pinterest"> </i> -->
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-sm gplus-ic">
+                                <!-- <i class="fa fa-google-plus"> </i> -->
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-sm tw-ic">
+                                <!-- <i class="fa fa-twitter"> </i> -->
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/Social-->
+                <!--Search Form-->
+                <li>
+                    <form class="search-form" role="search">
+                        <div class="form-group md-form mt-0 pt-1 waves-light">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </li>
+                <!--/.Search Form-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r">
+                                <i class="fa fa-chevron-right" style="margin-right: 17px"></i> MY COWORK
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
+                            <!-- <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="waves-effect">Submit listing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="waves-effect">Registration form</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r">
+                                <i class="fa fa-hand-pointer-o"></i> OUR SERVICES
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
+                            <!-- <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="waves-effect">For bloggers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="waves-effect">For authors</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"href="pricing.html">
+                                <i class="fa fa-eye" style="margin-right: 11px"></i> PRICING
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
+                            <!-- <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="waves-effect">Introduction</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="waves-effect">Monthly meetings</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li>
+                                <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
+                                    
+                                    <i class="fab fa-blogger-b" style="margin-right: 11px"></i> BLOG
+                                    <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                                </a>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r">
+                                <!-- <i class="fa fa-envelope-o"></i> -->
+                                <i class="fa fa-envelope" style="margin-right: 11px"></i> CONTACT US
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+
+                            </a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+
+
+                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 2, Alley
+                                            59, Ha Noi</a>
+
+                                        </a>
+                                    </li>
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 64, Alley
+                                            49, Lao Cai</a>
+                                    </li>
+
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-phone-volume" style="padding-right: 10px"></i>(+84) 99996666</a>
+                                    </li>
+
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-phone-volume" style="padding-right: 10px"></i>(+84) 66669999</a>
+                                    </li>
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-at" style="padding-right: 10px"></i>Contactme@gmail.com</a>
+                                        <a class="collapsible-header waves-effect arrow-r" style="font-size: 0.9rem; padding-left: 70px">
+                                            7:30 AM - 9:30 PM</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px" data-toggle="modal" data-target="#elegantModalForm">
+                        Sign In
+                    </button>
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px"  onclick="window.location.href='signUp.html'" >Sign
+                        Up
+                    </button>
+                    <div class="clear" style="clear: both"></div>
+                </li>
+                <!-- /. Side navigation links -->
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <!-- <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"> -->
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!--Main Layout-->
+    <main>
+        <div class="banner my-container-fluid">
+            <div class="box-banner">
+                <div class="box-detail">
+                    <p class="headline">Booking</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="body">
+            <div class="description">
+                <h1>Choose your service</h1>
+                <p>Choose your membership and the desired starting date. Optional additional services - e.g. a drink flat
+                    rate, lockers or your 24/7 access - may be added in the following step. Our memberships have a minimum
+                    term of one resp. three calendar months only and may be switched or cancelled at the end of each term.
+                    If you do not wish to change anything the term of your membership will be automatically renewed for the
+                    same amount of time (and so on). Very convenient. All prizes are net prizes excluding VAT.</p>
+            </div>
+            <div class="infos">
+                <h4>Location:</h4>
+                <p>Frankfurt, German</p>
+                <h4>Starting date:</h4>
+                <input id="today" type="date" min="2018-08-23">
+            </div>
+            <div class="price-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PRODUCT</th>
+                            <th>NET PRICE / UNIT</th>
+                            <th>QUANTITY</th>
+                            <th>SUM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div><b>Flex Membership</b></div>
+                                <div class="time">
+                                    <label>Term:</label>
+                                    <select id="first" onchange="termChange1(this)">
+                                        <option value="12">12 months</option>
+                                        <option value="6">6 months</option>
+                                        <option value="1">1 month</option>
+                                    </select>
+                                </div>
+                            </th>
+                            <td> <span class="pricePerMonth1"> 14.90 $ </span><br> <span>per month</span> </td>
+                            <td>
+                                <select name="" onchange="change1(this)">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </td>
+                            <td class="result1">0.00 $</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div><b>Hot Desk</b></div>
+                                <div class="time">
+                                    <label>Term:</label>
+                                    <select id="second" onchange="termChange2(this)">
+                                        <option value="12">12 months</option>
+                                        <option value="6">6 months</option>
+                                        <option value="1">1 month</option>
+                                    </select>
+                                </div>
+                            </th>
+                            <td> <span class="pricePerMonth2"> 199.00 $ </span><br> <span>per month</span> </td>
+                            <td>
+                                <select name="" onchange="change2(this)">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </td>
+                            <td class="result2">0.00 $</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div><b>Night Desk</b></div>
+                                <div class="time">
+                                    <label>Term:</label>
+                                    <select id="third" onchange="termChange3(this)">
+                                        <option value="12">12 months</option>
+                                        <option value="6">6 months</option>
+                                        <option value="1">1 month</option>
+                                    </select>
+                                </div>
+                            </th>
+                            <td> <span class="pricePerMonth3"> 59.00 $ </span><br> <span>per month</span> </td>
+                            <td>
+                                <select name="" onchange="change3(this)">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </td>
+                            <td class="result3">0.00 $</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div><b>Dedicated Desk</b></div>
+                                <div class="time">
+                                    <label>Term:</label>
+                                    <select id="fourth" onchange="termChange4(this)">
+                                        <option value="12">12 months</option>
+                                        <option value="6">6 months</option>
+                                        <option value="1">1 month</option>
+                                    </select>
+                                </div>
+                            </th>
+                            <td> <span class="pricePerMonth4"> 299.00 $ </span><br> <span>per month</span> </td>
+                            <td>
+                                <select name="" onchange="change4(this)">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </td>
+                            <td class="result4">0.00 $</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div><b>Office Desk</b></div>
+                                <div class="time">
+                                    <label>Term:</label>
+                                    <select id="fifth" onchange="termChange5(this)">
+                                        <option value="12">12 months</option>
+                                        <option value="6">6 months</option>
+                                        <option value="1">1 month</option>
+                                    </select>
+                                </div>
+                            </th>
+                            <td> <span class="pricePerMonth5"> 399.00 $ </span><br> <span>per month</span> </td>
+                            <td>
+                                <select name="" onchange="change5(this)">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </td>
+                            <td class="result5">0.00 $</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div><b>Total:</b></div>
+                                <!-- <div class="time">
+                                    <label>Term:</label>
+                                    <select name="runTime" id="selectTime">
+                                        <option value="12">12 months</option>
+                                        <option value="6">6 months</option>
+                                        <option value="1">1 month</option>
+                                    </select>
+                                </div> -->
+                            </th>
+                            <!-- <td> <span> 14.9 $ </span><br> <span>per month</span> </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </td> -->
+                            <td></td>
+                            <td></td>
+                            <td class="totalResult">0.00 $</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                            <td><button class="btn waves-effect btn-rounded" style="margin: 15px 0; background-color: #6d4d41"
+                                    data-toggle="modal" data-target="#elegantModalForm">Confirm</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <!--Content-->
+                    <div class="modal-content form-elegant">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h3 style="color:white" class="modal-title w-100  font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                                    in</strong></h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mx-4">
+                            <!--Body-->
+                            <div class="md-form mb-5">
+                                <input type="email" id="Form-email1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                            </div>
+
+                            <div class="md-form pb-3">
+                                <input type="password" id="Form-pass1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                                <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#" class=" ml-1" style="color: #6d4d41">
+                                    Password?</a></p>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign in</button>
+                            </div>
+                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
+                                in with:</p>
+
+                            <div class="row my-3 d-flex justify-content-center">
+                                <!--Facebook-->
+                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center" style="color: #6d4d41"></i></button>
+                                <!--Twitter-->
+                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter" style="color: #6d4d41"></i></button>
+                                <!--Google +-->
+                                <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g" style="color: #6d4d41"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer mx-5 pt-3 mb-1">
+                            <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="signUp.html" class="ml-1" style="color: #6d4d41">
+                                Sign Up</a></p>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+            <!-- Modal -->
+
+            <div class="foot-logo">
+                    <div class="img-footer">
+                        <img src="my_img/logo.png" alt="">
+                    </div>
+                    <p class="copyright">Copyright © 2018 CoWork. All rights reserved. </p>
+                </div>
+        </div>
+    </main>
+    <!--Main Layout-->
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+
+    <!-- Bootstrap tooltips -->
+
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/popper.min.js"></script>
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/mdb.min.js"></script>
+
+    <script>
+        // SideNav Button Initialization
+        $(".button-collapse").sideNav();
+        //SideNav Scrollbar Initialization
+        // var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+        // Ps.initialize(sideNavScrollbar);
+
+    </script>
+    <script>
+        let today = new Date();
+        document.querySelector('#today').valueAsDate = today;
+
+
+
+
+
+
+        function change1(input) {
+            let value = input.value,
+                result = $('.result1'),
+                term = document.getElementById('first').value;
+
+
+
+
+            let price = $('.pricePerMonth1').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+
+        function change2(input) {
+            let value = input.value,
+                result = $('.result2'),
+                term = document.getElementById('second').value;
+
+
+
+
+            let price = $('.pricePerMonth2').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+
+        function change3(input) {
+            let value = input.value,
+                result = $('.result3'),
+                term = document.getElementById('third').value;
+            console.log('dmm');
+
+
+
+            let price = $('.pricePerMonth3').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+
+        function change4(input) {
+            let value = input.value,
+                result = $('.result4'),
+                term = document.getElementById('fourth').value;
+
+
+
+
+            let price = $('.pricePerMonth4').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+
+        function change5(input) {
+            let value = input.value,
+                result = $('.result5'),
+                term = document.getElementById('fifth').value;
+
+
+
+
+            let price = $('.pricePerMonth5').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+
+        function termChange1(input) {
+            let value = input.value,
+                result = $('.result1'),
+                term = document.getElementById('first').value;
+
+
+
+            let price = $('.pricePerMonth1').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+        function termChange2(input) {
+            let value = input.value,
+                result = $('.result2'),
+                term = document.getElementById('second').value;
+
+
+
+            let price = $('.pricePerMonth2').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+        function termChange3(input) {
+            let value = input.value,
+                result = $('.result3'),
+                term = document.getElementById('third').value;
+
+
+
+            let price = $('.pricePerMonth3').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+        function termChange4(input) {
+            let value = input.value,
+                result = $('.result4'),
+                term = document.getElementById('fourth').value;
+
+
+
+            let price = $('.pricePerMonth4').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+        function termChange5(input) {
+            let value = input.value,
+                result = $('.result5'),
+                term = document.getElementById('fifth').value;
+
+
+
+            let price = $('.pricePerMonth5').text().replace('$', '');
+            newResult = price * value * term;
+            result.text(newResult + " $")
+            let total = $('.totalResult');
+            total.text(Number($('.result1').text().replace('$', '')) + Number($('.result2').text().replace('$', '')) +
+                Number($('.result3').text().replace('$', '')) + Number($('.result4').text().replace('$', '')) + Number($('.result5').text().replace('$', '')) + " $")
+        }
+
+
+    </script>
+</body>
+
+</html>

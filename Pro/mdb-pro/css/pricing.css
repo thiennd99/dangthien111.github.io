@@ -1,0 +1,163 @@
+.headline_2 {
+    color: white;
+    font-size: 1.4em;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: tr anslate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Arbutus Slab', serif;
+    width: 100%;
+
+}
+.headline {
+    top: 35%;
+
+}
+.box-banner {
+    background: linear-gradient(rgba(73, 70, 70, 0.66), rgba(73, 70, 70, 0.66)), url(../my_img/preise.jpg) center
+}
+.body {
+    height: 100%;
+    width: 100%;
+}
+.description {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.description p {
+    font-style: italic;
+    font-size: 1.3em;
+    text-align: left;
+}
+.time {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    padding-top: 40px ;
+    font-weight: 500;
+    position: relative;
+    flex-grow: 1;
+}
+.time::after {
+    content: '';
+    width: 2px;
+    background-color: white;
+    height: 80px;
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.right {
+    flex-grow: 14;
+    /* text-align: center; */
+    color: white;
+    font-size: 1.2em;
+    padding-top: 30px;
+}
+.first {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.second {
+    padding-top: 20px
+}
+
+.button {
+    flex-grow: 10;
+ 
+}
+.button button {
+  color: black !important;
+  margin-top: 50px
+}
+.voucher {
+    background-color: #6d4d41;
+    height: 150px;
+    width: 90%;
+    margin: auto;
+    display: flex
+}
+.table {
+    width: 90%;
+    margin: auto;
+    /* text-align: center */
+    padding-top: 50px;
+}
+table tr th {
+    width: 30%
+}
+table tr td {
+    width: 17.5%
+}
+table tr:nth-child(1) th {
+    padding: 50px;
+    
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+th p {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    
+}
+tr td {
+    text-align: center;
+}
+tr th p{
+    font-weight: bold
+}
+table {
+    border-top: 5px solid #6d4d41
+}
+td button {
+    background-color: #6d4d41;
+    color: white;
+}
+tr td:nth-child(3), tr th:nth-child(3) {
+    background-color: #cfd8d7a6;
+    border: 0;
+    font-weight: bold
+}
+tr:nth-child(13) td {
+    background-color: white;
+}
+.foot-logo {
+    width: 100%;
+    padding-top: 300px
+}
+.modal-header {
+    background-color: #6d4d41 !important;
+}
+.wrapp{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 30%;
+    margin: 1.5%;
+}
+.blog-item {
+    width: 100%;
+    margin: 4.5%;
+
+}

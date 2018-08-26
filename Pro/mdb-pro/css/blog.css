@@ -1,0 +1,8 @@
+.box-banner {
+    background: linear-gradient(rgba(73, 70, 70, 0.66), rgba(73, 70, 70, 0.66)), url(../my_img/blog-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headline_2 {
+    padding-top: 50px;
+}
