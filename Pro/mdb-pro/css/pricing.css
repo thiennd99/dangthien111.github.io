@@ -25,14 +25,14 @@
     height: 100%;
     width: 100%;
 }
-.description {
+.my-description {
     width: 90%;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     
 }
-.description p {
+.my-description p {
     font-style: italic;
     font-size: 1.3em;
     text-align: left;
