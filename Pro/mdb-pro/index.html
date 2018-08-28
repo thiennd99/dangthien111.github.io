@@ -90,7 +90,7 @@
                 <li>
                     <ul class="collapsible collapsible-accordion">
                         <li>
-                            <a class="collapsible-header waves-effect arrow-r">
+                            <a class="collapsible-header waves-effect arrow-r my-co">
                                 <i class="fa fa-chevron-right" style="margin-right: 17px"></i> MY COWORK
                                 <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
                             </a>
@@ -106,8 +106,8 @@
                             </div> -->
                         </li>
                         <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fa fa-hand-pointer-o"></i> OUR SERVICES
+                            <a class="collapsible-header waves-effect arrow-r" href="pricing.html">
+                                <i class="fa fa-hand-pointer-o"></i> PRICES & SERVICES
                                 <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
                             </a>
                             <!-- <div class="collapsible-body">
@@ -122,8 +122,8 @@
                             </div> -->
                         </li>
                         <li>
-                            <a class="collapsible-header waves-effect arrow-r" href="pricing.html">
-                                <i class="fa fa-eye" style="margin-right: 11px"></i> PRICING
+                            <a class="collapsible-header waves-effect arrow-r" href="booking.html">
+                                <i class="fa fa-eye" style="margin-right: 11px"></i> BOOKING
                                 <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
                             </a>
                             <!-- <div class="collapsible-body">
@@ -139,15 +139,14 @@
                         </li>
                         <li>
                                 <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
-                                    
-                                    <i class="fab fa-blogger-b" style="margin-right: 11px"></i> BLOG
+                                    <i class="fab fa-blogger-b" style="margin-right: 14px"></i>   BLOG
                                     <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
                                 </a>
                         </li>
                         <li>
                             <a class="collapsible-header waves-effect arrow-r">
                                 <!-- <i class="fa fa-envelope-o"></i> -->
-                                <i class="fa fa-envelope" style="margin-right: 11px"></i> CONTACT US
+                                <i class="fa fa-envelope" style="margin-right: 12px"></i> CONTACT US
                                 <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
 
                             </a>
@@ -278,7 +277,7 @@
             <div style="height: 2000px"></div>
         </div> -->
         <div class="body">
-            <div class="introduce">
+            <div class="introduce" id="my-co">
                 <h3 class="line">WE ARE COWORK</h3>
                 <p class="descript">COWORK is open coworking space that hosted 700+ entrepreneurs and freelancers. We support
                     their growth through classes, events and partnerships. Whether you are an independent, an entrepreneur
@@ -286,8 +285,8 @@
                     pursue what’s possible.</p>
             </div>
             <div class="slide-show">
-                <div class="tab">
-                    <ul class="tab-nav">
+                <div class="tab ">
+                    <ul class="tab-nav d-flex justify-content-center " >
                         <!-- <div class="wrap-tab"> -->
                         <li class="tablinks" onclick="openCity(event,'1')" id="defaultOpen">
                             <div>
@@ -889,7 +888,11 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+        $('.my-co').click(function(e){
+            e.preventDefault();
+            $('html, body').animate( {scrollTop:$('#my-co').offset().top} ,400)
 
+        })
     </script>
     <script>
         $(".regular").slick({
