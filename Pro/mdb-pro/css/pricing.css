@@ -37,7 +37,7 @@
     font-size: 1.3em;
     text-align: left;
 }
-.time {
+.time-line {
     width: 30%;
     height: 100%;
     text-align: center;
@@ -48,7 +48,7 @@
     position: relative;
     flex-grow: 1;
 }
-.time::after {
+.time-line::after {
     content: '';
     width: 2px;
     background-color: white;
@@ -146,18 +146,6 @@ tr:nth-child(13) td {
 .modal-header {
     background-color: #6d4d41 !important;
 }
-.wrapp{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-.column {
-    flex: 30%;
-    margin: 1.5%;
-}
-.blog-item {
-    width: 100%;
-    margin: 4.5%;
-
+.price-res {
+    display: none;
 }

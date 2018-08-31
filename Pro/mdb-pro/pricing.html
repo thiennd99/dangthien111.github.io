@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body class="fixed-sn light-blue-skin">
@@ -99,8 +100,8 @@
                             </div> -->
                         </li>
                         <li>
-                            <a class="collapsible-header waves-effect arrow-r"href="pricing.html">
-                                <i class="fa fa-hand-pointer-o" ></i>PRICES & SERVICES
+                            <a class="collapsible-header waves-effect arrow-r" href="pricing.html">
+                                <i class="fa fa-hand-pointer-o"></i>PRICES & SERVICES
                                 <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
                             </a>
                             <!-- <div class="collapsible-body">
@@ -131,11 +132,11 @@
                             </div> -->
                         </li>
                         <li>
-                                <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
-                                    
-                                    <i class="fab fa-blogger-b" style="margin-right: 12px"></i> BLOG
-                                    <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
-                                </a>
+                            <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
+
+                                <i class="fab fa-blogger-b" style="margin-right: 12px"></i> BLOG
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
                         </li>
                         <li>
                             <a class="collapsible-header waves-effect arrow-r">
@@ -186,10 +187,12 @@
 
 
                     </ul>
-                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px" data-toggle="modal" data-target="#elegantModalForm">
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px"
+                        data-toggle="modal" data-target="#elegantModalForm">
                         Sign In</button>
-                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px"  onclick="window.location.href='signUp.html'" >Sign
-                        Up</button>
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px"
+                        onclick="window.location.href='signUp.html'">Sign Up
+                    </button>
                     <div class="clear" style="clear: both"></div>
                 </li>
                 <!-- /. Side navigation links -->
@@ -216,7 +219,9 @@
                     </p>
                     <p class="headline_2">A glance at our services, terms and conditions</p>
                     <a href="#">
-                        <button onclick="window.location.href='booking.html'" type="button" class="my_btn btn-brown waves-effect waves-light">BOOK NOW</button>
+                        <button onclick="window.location.href='booking.html'" type="button" class="my_btn btn-brown waves-effect waves-light">BOOK
+                            NOW
+                        </button>
                     </a>
                 </div>
 
@@ -230,7 +235,7 @@
                     feel free to contact us right away – we're standing by.</p>
             </div>
             <div class="voucher">
-                <div class="time">
+                <div class="time-line">
                     1 DAY <br> FOR FREE
                 </div>
                 <div class="right">
@@ -337,66 +342,83 @@
                     </tr>
                     <tr>
                         <th></th>
-                        <td><button  onclick="window.location.href='booking.html'" class="btn btn-rounded btn-sm">Book now</button></td>
-                        <td> <button class="btn btn-rounded btn-sm" onclick="window.location.href='booking.html'">Book now</button> </td>
+                        <td><button onclick="window.location.href='booking.html'" class="btn btn-rounded btn-sm">Book now</button></td>
+                        <td> <button class="btn btn-rounded btn-sm" onclick="window.location.href='booking.html'">Book now</button>
+                        </td>
                         <td><button class="btn btn-rounded btn-sm" onclick="window.location.href='booking.html'">Book now</button></td>
                         <td><button class="btn btn-rounded btn-sm" onclick="window.location.href='booking.html'">Book now</button></td>
                     </tr>
                 </table>
-                   <!-- Modal -->
-            <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <!--Content-->
-                        <div class="modal-content form-elegant">
-                            <!--Header-->
-                            <div class="modal-header text-center">
-                                <h3 style="color:white" class="modal-title w-100  font-weight-bold my-3" id="myModalLabel"><strong>Sign
-                                        in</strong></h3>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <!--Body-->
-                            <div class="modal-body mx-4">
-                                <!--Body-->
-                                <div class="md-form mb-5">
-                                    <input type="email" id="Form-email1" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
-                                </div>
-    
-                                <div class="md-form pb-3">
-                                    <input type="password" id="Form-pass1" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
-                                    <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#" class=" ml-1" style="color: #6d4d41">
-                                        Password?</a></p>
-                                </div>
-    
-                                <div class="text-center mb-3">
-                                    <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign in</button>
-                                </div>
-                                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
-                                    in with:</p>
-    
-                                <div class="row my-3 d-flex justify-content-center">
-                                    <!--Facebook-->
-                                    <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center" style="color: #6d4d41"></i></button>
-                                    <!--Twitter-->
-                                    <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter" style="color: #6d4d41"></i></button>
-                                    <!--Google +-->
-                                    <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g" style="color: #6d4d41"></i></button>
-                                </div>
-                            </div>
-                            <!--Footer-->
-                            <div class="modal-footer mx-5 pt-3 mb-1">
-                                <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="ml-1" style="color: #6d4d41">
-                                    Sign Up</a></p>
-                            </div>
-                        </div>
-                        <!--/.Content-->
+            </div>
+            <!-- <div class="price-res">
+                <div class="work-space">Workspace</div>
+                <div class="res">
+                    <div class="wrap">
+                        <span>Monthly coworking memberships</span>
                     </div>
                 </div>
-                <!-- Modal -->
+            </div> -->
+            <!-- Modal -->
+            <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <!--Content-->
+                    <div class="modal-content form-elegant">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h3 style="color:white" class="modal-title w-100  font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                                    in
+                                </strong></h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mx-4">
+                            <!--Body-->
+                            <div class="md-form mb-5">
+                                <input type="email" id="Form-email1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                            </div>
+
+                            <div class="md-form pb-3">
+                                <input type="password" id="Form-pass1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                                <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#"
+                                        class=" ml-1" style="color: #6d4d41">
+                                        Password?</a></p>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign
+                                    in
+                                </button>
+                            </div>
+                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
+                                in with:</p>
+
+                            <div class="row my-3 d-flex justify-content-center">
+                                <!--Facebook-->
+                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center"
+                                        style="color: #6d4d41"></i></button>
+                                <!--Twitter-->
+                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter"
+                                        style="color: #6d4d41"></i></button>
+                                <!--Google +-->
+                                <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"
+                                        style="color: #6d4d41"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer mx-5 pt-3 mb-1">
+                            <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="ml-1"
+                                    style="color: #6d4d41">
+                                    Sign Up</a></p>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
             </div>
+            <!-- Modal -->
             <div class="foot-logo">
                 <div class="img-footer">
                     <img src="my_img/logo.png" alt="">

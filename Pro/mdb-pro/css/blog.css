@@ -6,3 +6,24 @@
 .headline_2 {
     padding-top: 50px;
 }
+/* .wrapp{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 30%;
+    margin: 1.5%;
+}
+.blog-item {
+    width: 100%;
+    margin: 4.5%;
+
+} */
+.blog-item {
+    margin-top: 40px
+}
+* {
+    box-sizing: border-box
+}

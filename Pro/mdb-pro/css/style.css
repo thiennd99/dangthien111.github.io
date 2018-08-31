@@ -2,6 +2,12 @@
 * {
     box-sizing: border-box;
 }
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
 .light-blue-skin .side-nav .sidenav-bg.mask-strong:after {
     background-color: rgba(107, 74, 52, 0.8);
     /* color: red;
@@ -14,7 +20,7 @@
 
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
     content: "\f0c9";
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 25px;
     color: #6d4d41;
     position: fixed;
@@ -29,7 +35,7 @@
     font-size: 20px;
 }
 
-.side-nav .collapsible .fa {
+.side-nav  .collapsible  .fa {
     margin-right: 15px;
 }
 
@@ -87,6 +93,18 @@
     position: relative;
     vertical-align: middle;
     margin-top: -2px;
+}
+.btn-respon button {
+    display: none;
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    z-index: 999;
+}
+#slide-out {
+    z-index: 1000;
+}
+.row {
+    margin: 0 !important
 }
 
 .my_btn .fa.right {
@@ -157,14 +175,21 @@
     margin: auto
 }
 .box-detail button {
-    width: 50% ;
-    padding: 20px;
+    width: 55% ;
+    padding: 15px 20px;
+    font-size: 20px;
 }
+.fix-margin {
+    margin: 0
+}
+.wrap-form {
+    width: 100%;
 
+}
 .headline {
     width: 100%;
     color: white;
-    font-size: 4em;
+    font-size: 4vw;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -185,7 +210,7 @@
 .line {
     font-family: 'Arbutus Slab', serif;
     text-align: center;
-    font-size: 3em;
+   
     padding-top: 30px;
     position: relative;
     
@@ -233,6 +258,7 @@
     width: 50%;
     margin: auto;
     position: relative;
+    font-size: 1.25vw
 }
 ol, ul, li {
     list-style: none;
@@ -312,15 +338,18 @@ ol, ul, li {
     height: 100%;
 }
 .box-item {
-    width: 33.3333%;
+    /* width: 33.3333%; */
     float: left;
  
     padding: 1%;
 }
 .box-inner {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     overflow: hidden;
+}
+.total-responsive {
+    display: none;
 }
 
 .box-item img {
@@ -424,12 +453,13 @@ img {
   
 }
 .price-item {
-    width:25% ;
-    height: 86%;
+    /* width:25% ;
+    height: 86%; */
     background-color: rgba(255, 255, 255, 0.95);
     float: left;
     margin: 4%;
     text-align: center;
+    padding: 0;
 }
 .title {
     background-color: rgba(107, 74, 52, 0.8);
@@ -450,7 +480,7 @@ img {
     font-size: 1.35em
 }
 .blog {
-    width: 90%;
+    width: 100%;
     position: relative;
     margin: auto;
 }
@@ -458,15 +488,29 @@ img {
     width: 100% ;
 }
 .blog-item {
-    width: 30%;
+    /* width: 30%; */
     float: left;
-    padding: 40px;
-    margin: 1.5%;
+    /* margin: 3%; */
+    padding: 30px;
+    /* margin-top: 30px;
+    margin-bottom: 10px; */
     box-shadow: 0 0px 4px rgba(0,0,0,0.1);
     /* border: 1px solid #ccc; */
     cursor: pointer;
     font-family: 'Arbutus Slab', serif;
-    
+}
+.blog-item:nth-child(1){
+    margin-left: 8%
+}
+.blog-item:nth-child(3){
+    margin-right: 8%
+}
+.blog-item:nth-child(2){
+    margin-left: 4%;
+    margin-right: 4%
+}
+.pagination {
+    margin-top: 40px;
 }
 .blog-item:hover {
     box-shadow: 0 2px 20px rgba(0,0,0,0.2);
@@ -478,7 +522,7 @@ img {
 }
 .blog h1 {
     padding-top: 50px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
    
 }
 .blog h1::after {
@@ -639,6 +683,8 @@ img {
 .slider {
     width: 50%;
     /* margin: 100px auto; */
+    float: right;
+    margin-top: 100px;
 }
 
 .slick-slide {
@@ -735,7 +781,7 @@ section {
     font-size: 2.5em !important;
 }
 .my_form {
-    width: 40%;
+    width: 45%;
     margin: auto;
     margin-top: 20px;
     

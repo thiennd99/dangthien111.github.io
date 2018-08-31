@@ -14,7 +14,6 @@
     <link href="https://namboss.blob.core.windows.net/huong/mdb.css" rel="stylesheet">
 
     <!-- Your custom styles (optional) -->
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
@@ -24,6 +23,7 @@
 
 
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -138,10 +138,10 @@
                             </div> -->
                         </li>
                         <li>
-                                <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
-                                    <i class="fab fa-blogger-b" style="margin-right: 14px"></i>   BLOG
-                                    <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
-                                </a>
+                            <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
+                                <i class="fab fa-blogger-b" style="margin-right: 14px"></i> BLOG
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
                         </li>
                         <li>
                             <a class="collapsible-header waves-effect arrow-r">
@@ -192,10 +192,12 @@
 
 
                     </ul>
-                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px" data-toggle="modal" data-target="#elegantModalForm">Sign
-                        In</button>
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px"
+                        data-toggle="modal" data-target="#elegantModalForm">Sign In
+                    </button>
                     <button onclick="window.location.href='signUp.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px">Sign
-                        Up</button>
+                        Up
+                    </button>
                     <div class="clear" style="clear: both"></div>
                 </li>
                 <!-- /. Side navigation links -->
@@ -261,8 +263,9 @@
                         <br>
                         <span>AFTER HOME</span>
                     </p>
-                    <a href="#">
-                        <button onclick="window.location.href='booking.html'" type="button" class="my_btn btn-brown waves-effect waves-light">BOOK NOW</button>
+                    <a href="booking.html">
+                        <button type="button" class="my_btn btn-brown waves-effect waves-light">BOOK NOW
+                        </button>
                     </a>
                 </div>
 
@@ -278,44 +281,48 @@
         </div> -->
         <div class="body">
             <div class="introduce" id="my-co">
-                <h3 class="line">WE ARE COWORK</h3>
+                <h1 class="line">WE ARE COWORK</h1>
                 <p class="descript">COWORK is open coworking space that hosted 700+ entrepreneurs and freelancers. We support
                     their growth through classes, events and partnerships. Whether you are an independent, an entrepreneur
                     building a startup, a small business owner or a corporate innovator, COWORK is a place to imagine and
                     pursue what’s possible.</p>
             </div>
-            <div class="slide-show">
+            <div class="slide-show ">
                 <div class="tab ">
-                    <ul class="tab-nav d-flex justify-content-center " >
-                        <!-- <div class="wrap-tab"> -->
-                        <li class="tablinks" onclick="openCity(event,'1')" id="defaultOpen">
-                            <div>
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </li>
-                        <li class="tablinks" onclick="openCity(event,'2')">
-                            <div>
-                                <i class="far fa-bell-slash"></i>
-                            </div>
-                        </li>
-                        <li class="tablinks" onclick="openCity(event,'3')">
-                            <div>
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                        </li>
-                        <li class="tablinks" onclick="openCity(event,'4')">
-                            <div>
-                                <i class="fas fa-utensils"></i>
-                            </div>
-                        </li>
-                        <li class="tablinks" onclick="openCity(event,'5')">
-                            <div>
-                                <i class="fas fa-bed"></i>
-                            </div>
-                        </li>
-                        <div class="clear"></div>
-                        <!-- </div> -->
-                    </ul>
+                    <div class="row">
+
+                        <ul class="tab-nav d-flex justify-content-center col-md-6 col-sm-12">
+                            <!-- <div class="wrap-tab"> -->
+                            <li class="tablinks" onclick="openCity(event,'1')" id="defaultOpen">
+                                <div>
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event,'2')">
+                                <div>
+                                    <i class="far fa-bell-slash"></i>
+                                </div>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event,'3')">
+                                <div>
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event,'4')">
+                                <div>
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event,'5')">
+                                <div>
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                            </li>
+                            <div class="clear"></div>
+                            <!-- </div> -->
+                        </ul>
+
+                    </div>
                 </div>
                 <div id="1" class="tabcontent">
                     <h1 class="box-line">- OPEN SPACE -
@@ -325,44 +332,104 @@
 
                     <div class="box">
                         <div class="wrap-box">
-                            <div class="row-1">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
+                            <div class="row">
+                                <div class="col-md-12">
 
-                            </div>
-                            <div class="row-2">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/4.jpg" alt="">
+                                    <div class="box-item wow fadeInLeftBig col-md-4">
+                                        <div class="box-inner ">
+                                            <img src="my_img/Gallery/1.jpg" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/5.jpg" alt="">
+                                    <div class="box-item wow fadeInUpBig col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/2.jpg" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/6.jpg" alt="">
+                                    <div class="box-item wow fadeInRightBig col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/3.jpg" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="clear"></div>
 
+
+
+
+                                    <div class="box-item wow rollIn col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item wow slideInUp col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item wow slideInRight col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                </div>
                             </div>
+
+
+
+
+                            <!-- <div class="row">
+                                <div class="col-md-12">
+
+                                    <div id="mdb-lightbox-ui"></div>
+
+                                    <div class="mdb-lightbox">
+
+                                        <figure class="col-md-4">
+                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067">
+                                                <img src="my_img/Gallery/1.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
+                                                <img src="my_img/Gallery/2.jpg" class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
+                                                <img src="my_img/Gallery/3.jpg" class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
+                                                <img src="my_img/Gallery/4.jpg" class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
+                                                <img src="my_img/Gallery/5.jpg" class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
+                                                <img src="my_img/Gallery/6.jpg" class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div> -->
+
+
+
+
                         </div>
 
 
@@ -376,44 +443,43 @@
                     <i class="fas fa-angle-double-down"></i>
                     <div class="box">
                         <div class="wrap-box">
-                            <div class="row-1">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/2.2.jpeg" alt="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-item col-md-4 ">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/2.2.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/2.6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/2.4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/2.3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/2.1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/2.6.jpg" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/2.6.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/2.4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
+
 
                             </div>
-                            <div class="row-2">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/2.3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/2.1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/2.6.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
 
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -424,44 +490,43 @@
                     <i class="fas fa-angle-double-down"></i>
                     <div class="box">
                         <div class="wrap-box">
-                            <div class="row-1">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/3.1.jpg" alt="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/3.1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/3.2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/3.3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/3.4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/3.5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/3.6.jpg" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/3.2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/3.3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
+
 
                             </div>
-                            <div class="row-2">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/3.4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/3.5.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/3.6.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
 
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -472,44 +537,46 @@
                     <i class="fas fa-angle-double-down"></i>
                     <div class="box">
                         <div class="wrap-box">
-                            <div class="row-1">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/4.1.jpg" alt="">
+                            <div class="row">
+                                <div class="com-md-12">
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/4.1.jpg" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/4.2.jpg" alt="">
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/4.2.jpg" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/4.3.jpg" alt="">
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/4.3.jpg" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="clear"></div>
 
-                            </div>
-                            <div class="row-2">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/4.4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/4.5.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/4.6.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
 
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/4.4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/4.5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/4.6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -520,44 +587,45 @@
                     <i class="fas fa-angle-double-down"></i>
                     <div class="box">
                         <div class="wrap-box">
-                            <div class="row-1">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/5.1.jpg" alt="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/5.1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/5.2.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/5.3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/5.4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/5.5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-item col-md-4">
+                                        <div class="box-inner">
+                                            <img src="my_img/Gallery/5.6.jpg" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/5.2.jpeg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/5.3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
+
 
                             </div>
-                            <div class="row-2">
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/5.4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/5.5.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="box-item">
-                                    <div class="box-inner">
-                                        <img src="my_img/Gallery/5.6.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
 
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -566,71 +634,74 @@
             <div class="price">
                 <h1 class="box-line price-line">PRICING</h1>
                 <div class="box-price">
-                    <div class="price-item">
-                        <div class="title">Work Space</div>
-                        <div class="price-content">
-                            <p>10$* / 1 Day
-                                <br>
-                                <span>20$ / 3 Days</span>
-                            </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="price-item wow zoomInLeft col-md-3">
+                                <div class="title">My Work Space</div>
+                                <div class="price-content">
+                                    <p>10$* / 1 Day
+                                        <br>
+                                        <span>20$ / 3 Days</span>
+                                    </p>
 
-                            <p>Flexible Seat</p>
-                            <p>Free coffee & tea</p>
-                            <p>High speed wifi</p>
-                            <p>Print/Scan/Copy: 0.5$/page</p>
-                            <p>Lockers: 1$/day</p>
-                            <p>Meeting room: 5$/hr</p>
-                            <p>
-                                <b>* Student: 8$ / Day</b>
+                                    <p>Flexible Seat</p>
+                                    <p>Free coffee & tea</p>
+                                    <p>High speed wifi</p>
+                                    <p>Print/Scan/Copy: 0.5$/page</p>
+                                    <p>Lockers: 1$/day</p>
+                                    <p>Meeting room: 5$/hr</p>
+                                    <p>
+                                        <b>* Student: 8$ / Day</b>
 
-                            </p>
+                                    </p>
+                                </div>
+                                <button onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
+                            </div>
+                            <div class="price-item wow zoomInDown col-md-3">
+                                <div class="title">Business Center</div>
+                                <div class="price-content">
+                                    <p>199 $
+                                        <br>
+                                        <span>1 Month</span>
+                                    </p>
+
+                                    <p>Flexible Seat</p>
+                                    <p>Free coffee & tea</p>
+                                    <p>High speed wifi</p>
+                                    <p>Print/Scan/Copy: 0.5$/page</p>
+                                    <p>Lockers: 1$/day</p>
+                                    <p>Meeting room: 5$/hr</p>
+                                    <p>
+                                        <b>*From 17:30 to 21:30</b>
+                                    </p>
+                                </div>
+                                <button onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
+
+                            </div>
+                            <div class="price-item wow zoomInRight col-md-3">
+
+                                <div class="title">CO Companion</div>
+                                <div class="price-content">
+                                    <p>299 $
+                                        <br>
+                                        <span>1 Month</span>
+                                    </p>
+
+                                    <p>Flexible Seat</p>
+                                    <p>Free coffee & tea</p>
+                                    <p>High speed wifi</p>
+                                    <p>Print/Scan/Copy: 0.5$/page</p>
+                                    <p>Lockers: 1$/day</p>
+                                    <p>Meeting room: 5$/hr</p>
+                                    <p>
+                                        <b>*From 17:30 to 21:30</b>
+                                    </p>
+                                </div>
+                                <button onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
+
+                            </div>
                         </div>
-                        <button onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
                     </div>
-                    <div class="price-item">
-                        <div class="title">Business Center</div>
-                        <div class="price-content">
-                            <p>199 $
-                                <br>
-                                <span>1 Month</span>
-                            </p>
-
-                            <p>Flexible Seat</p>
-                            <p>Free coffee & tea</p>
-                            <p>High speed wifi</p>
-                            <p>Print/Scan/Copy: 0.5$/page</p>
-                            <p>Lockers: 1$/day</p>
-                            <p>Meeting room: 5$/hr</p>
-                            <p>
-                                <b>*From 17:30 to 21:30</b>
-                            </p>
-                        </div>
-                        <button onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
-
-                    </div>
-                    <div class="price-item">
-
-                        <div class="title">CO Companion</div>
-                        <div class="price-content">
-                            <p>299 $
-                                <br>
-                                <span>1 Month</span>
-                            </p>
-
-                            <p>Flexible Seat</p>
-                            <p>Free coffee & tea</p>
-                            <p>High speed wifi</p>
-                            <p>Print/Scan/Copy: 0.5$/page</p>
-                            <p>Lockers: 1$/day</p>
-                            <p>Meeting room: 5$/hr</p>
-                            <p>
-                                <b>*From 17:30 to 21:30</b>
-                            </p>
-                        </div>
-                        <button  onclick="window.location.href='pricing.html'" type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px; text-transform: inherit; font-size: 1.15em; margin-bottom: 35px">Detail</button>
-
-                    </div>
-                    <div class="clear"></div>
                 </div>
 
             </div>
@@ -641,101 +712,105 @@
                 <div class="blog-box">
                     <div class="blog-wrapper">
 
-                        <div class="blog-item">
-                            <div class="information">
-                                <p> 09/06/2018</p>
-                                <p>By COWork</p>
-                            </div>
-                            <div class="banner-blog">
-                                <img src="my_img/blog-img.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="blog-item wow fadeInLeftBig col-md-3">
+                                    <div class="information">
+                                        <p> 09/06/2018</p>
+                                        <p>By COWork</p>
+                                    </div>
+                                    <div class="banner-blog">
+                                        <img src="my_img/blog-img.jpg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>
 
-                                    Global Coworking Studies: So hat sich Coworking verändert</h2>
-                                <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider des Arbeitens
-                                    aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
-                            </div>
-                            <div class="source">
-                                <p>In Sitepoint</p>
+                                            Global Coworking Studies: So hat sich Coworking verändert</h2>
+                                        <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider
+                                            des Arbeitens aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
+                                    </div>
+                                    <div class="source">
+                                        <p>In Sitepoint</p>
+                                    </div>
+                                </div>
+                                <div class="blog-item wow fadeInUpBig col-md-3">
+                                    <div class="information">
+                                        <p> 06/09/2018</p>
+                                        <p>By COWork</p>
+                                    </div>
+                                    <div class="banner-blog">
+                                        <img src="my_img/blog-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>
+
+
+
+                                            Global Coworking Studies: So hat sich Coworking verändert</h2>
+                                        <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider
+                                            des Arbeitens aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
+                                    </div>
+                                    <div class="source">
+                                        <p>In Sitepoint</p>
+                                    </div>
+                                </div>
+                                <div class="blog-item wow fadeInRightBig col-md-3">
+                                    <div class="information">
+                                        <p> 05/29/2018</p>
+                                        <p>By COWork</p>
+                                    </div>
+                                    <div class="banner-blog">
+                                        <img src="my_img/blog-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>
+                                            Global Coworking Studies: So hat sich Coworking verändert</h2>
+                                        <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider
+                                            des Arbeitens aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
+                                    </div>
+                                    <div class="source">
+                                        <p>In Sitepoint</p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
                             </div>
                         </div>
-                        <div class="blog-item">
-                            <div class="information">
-                                <p> 06/09/2018</p>
-                                <p>By COWork</p>
-                            </div>
-                            <div class="banner-blog">
-                                <img src="my_img/blog-img-1.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <h2>
-
-
-
-                                    Global Coworking Studies: So hat sich Coworking verändert</h2>
-                                <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider des Arbeitens
-                                    aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
-                            </div>
-                            <div class="source">
-                                <p>In Sitepoint</p>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="information">
-                                <p> 05/29/2018</p>
-                                <p>By COWork</p>
-                            </div>
-                            <div class="banner-blog">
-                                <img src="my_img/blog-img-2.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <h2>
-                                    Global Coworking Studies: So hat sich Coworking verändert</h2>
-                                <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider des Arbeitens
-                                    aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
-                            </div>
-                            <div class="source">
-                                <p>In Sitepoint</p>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
                     </div>
-                     <!--Pagination dark-->
-        <nav>
-                <ul class="pagination pg-dark justify-content-center">
-                    <!--Arrow left-->
-                    <li class="page-item">
-                        <a class="page-link" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                    </li>
-    
-                    <!--Numbers-->
-                    <li class="page-item active"><a class="page-link">1</a></li>
-                    <li class="page-item"><a class="page-link">2</a></li>
-                    <li class="page-item"><a class="page-link">3</a></li>
-                    <li class="page-item"><a class="page-link">4</a></li>
-                    <li class="page-item"><a class="page-link">5</a></li>
-    
-                    <!--Arrow right-->
-                    <li class="page-item">
-                        <a class="page-link" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!--/Pagination dark-->
+                    <!--Pagination dark-->
+                    <nav>
+                        <ul class="pagination pg-dark justify-content-center">
+                            <!--Arrow left-->
+                            <li class="page-item">
+                                <a class="page-link" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+
+                            <!--Numbers-->
+                            <li class="page-item active"><a class="page-link">1</a></li>
+                            <li class="page-item"><a class="page-link">2</a></li>
+                            <li class="page-item"><a class="page-link">3</a></li>
+                            <li class="page-item"><a class="page-link">4</a></li>
+                            <li class="page-item"><a class="page-link">5</a></li>
+
+                            <!--Arrow right-->
+                            <li class="page-item">
+                                <a class="page-link" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--/Pagination dark-->
 
                 </div>
             </div>
             <div class="partner">
                 <div class="circle">
-                    <div class="circle-1"></div>
-                    <div class="circle-2">
+                    <div class="circle-1 wow rollIn"></div>
+                    <div class="circle-2 wow rollIn">
                         <div class="circle-content">
                             <h2 class="box-line">
                                 Our Partner
@@ -745,7 +820,7 @@
                     </div>
                 </div>
 
-                <section class="regular slider">
+                <div class="regular slider">
                     <div>
                         <img src="my_img/ebay-coworking.svg">
                     </div>
@@ -765,7 +840,7 @@
                         <img src="my_img/tui-coworking.svg">
                     </div>
 
-                </section>
+                </div>
                 <div class="clear"></div>
 
             </div>
@@ -780,70 +855,80 @@
             <div class="subscribe">
                 <h1 class="box-line">Follow Cowork’s Latest News and Events </h1>
                 <!-- Material input -->
-                <div class="md-form my_form">
-                    <i class="fa fa-envelope prefix"></i>
-                    <input type="email" id="inputValidationEx" class="form-control validate">
-                    <label for="inputValidationEx" data-error="wrong" data-success="right">Type your email</label>
-                    <button type="button" class="btn btn-brown">Subscribe</button>
+                <div class="wrap-form">
+                    <div class="md-form my_form  ">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="email" id="inputValidationEx" class="form-control validate">
+                        <label for="inputValidationEx" data-error="wrong" data-success="right">Type your email</label>
+                        <button type="button" class="btn btn-brown">Subscribe</button>
+                    </div>
                 </div>
                 <div class="img-footer">
                     <img src="my_img/logo.png" alt="">
                 </div>
                 <p class="copyright">Copyright © 2018 CoWork. All rights reserved. </p>
             </div>
-               <!-- Modal -->
-               <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <!--Content-->
-                        <div class="modal-content form-elegant">
-                            <!--Header-->
-                            <div class="modal-header text-center">
-                                <h3 style="color:white" class="modal-title w-100 font-weight-bold my-3" id="myModalLabel" ><strong>Sign
-                                        in</strong></h3>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+            <!-- Modal -->
+            <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <!--Content-->
+                    <div class="modal-content form-elegant">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h3 style="color:white" class="modal-title w-100  font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                                    in
+                                </strong></h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mx-4">
+                            <!--Body-->
+                            <div class="md-form mb-5">
+                                <input type="email" id="Form-email1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                            </div>
+
+                            <div class="md-form pb-3">
+                                <input type="password" id="Form-pass1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                                <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#"
+                                        class=" ml-1" style="color: #6d4d41">
+                                        Password?</a></p>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign
+                                    in
                                 </button>
                             </div>
-                            <!--Body-->
-                            <div class="modal-body mx-4">
-                                <!--Body-->
-                                <div class="md-form mb-5">
-                                    <input type="email" id="Form-email1" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
-                                </div>
-    
-                                <div class="md-form pb-3">
-                                    <input type="password" id="Form-pass1" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
-                                    <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#" class=" ml-1" style="color: #6d4d41">
-                                        Password?</a></p>
-                                </div>
-    
-                                <div class="text-center mb-3">
-                                    <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign in</button>
-                                </div>
-                                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
-                                    in with:</p>
-    
-                                <div class="row my-3 d-flex justify-content-center">
-                                    <!--Facebook-->
-                                    <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center" style="color: #6d4d41"></i></button>
-                                    <!--Twitter-->
-                                    <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter" style="color: #6d4d41"></i></button>
-                                    <!--Google +-->
-                                    <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g" style="color: #6d4d41"></i></button>
-                                </div>
-                            </div>
-                            <!--Footer-->
-                            <div class="modal-footer mx-5 pt-3 mb-1">
-                                <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="ml-1" style="color: #6d4d41">
-                                    Sign Up</a></p>
+                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
+                                in with:</p>
+
+                            <div class="row my-3 d-flex justify-content-center">
+                                <!--Facebook-->
+                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center"
+                                        style="color: #6d4d41"></i></button>
+                                <!--Twitter-->
+                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter"
+                                        style="color: #6d4d41"></i></button>
+                                <!--Google +-->
+                                <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"
+                                        style="color: #6d4d41"></i></button>
                             </div>
                         </div>
-                        <!--/.Content-->
+                        <!--Footer-->
+                        <div class="modal-footer mx-5 pt-3 mb-1">
+                            <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="ml-1"
+                                    style="color: #6d4d41">
+                                    Sign Up</a></p>
+                        </div>
                     </div>
+                    <!--/.Content-->
                 </div>
-                <!-- Modal -->
+            </div>
+            <!-- Modal -->
 
     </main>
     <!--Main Layout-->
@@ -851,17 +936,20 @@
     <!-- /Start your project here-->
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
 
     <!-- Bootstrap tooltips -->
 
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/mdb.min.js"></script>
     <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/popper.min.js"></script>
     <script type="text/javascript" src="js/tether.min.js"></script>
+
+
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/mdb.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 
     <script>
         // SideNav Button Initialization
@@ -871,7 +959,6 @@
         // Ps.initialize(sideNavScrollbar);
 
     </script>
-    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
         document.getElementById('defaultOpen').click();
         function openCity(evt, cityName) {
@@ -888,9 +975,9 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-        $('.my-co').click(function(e){
+        $('.my-co').click(function (e) {
             e.preventDefault();
-            $('html, body').animate( {scrollTop:$('#my-co').offset().top} ,400)
+            $('html, body').animate({ scrollTop: $('#my-co').offset().top }, 400)
 
         })
     </script>
@@ -918,8 +1005,14 @@
                 position: myCenter
             });
             marker.setMap(map);
+
+
         }
     </script>
+    <script>
+        new WOW().init();
+    </script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 </body>

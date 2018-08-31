@@ -1,6 +1,6 @@
 .box-banner {
     background: linear-gradient(rgba(73, 70, 70, 0.66), rgba(73, 70, 70, 0.66)), url(../my_img/buchungsstrecke-banner.png);
-    /* background-size: cover; */
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     height: 144px;
@@ -86,6 +86,7 @@ tr:nth-child(7) {
 .price-table {
     height: 1000px
 }
+
 .totalResult {
     font-weight: bold;
     font-size: 1.7em;
@@ -129,9 +130,17 @@ tr:nth-child(7) {
     padding: 22px;
 }
 .right input, .right select {
-    margin: 20px;
- 
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 
+}
+.country select {
+    width: calc(60% + 40px) ;
+    
+}
+.birthday input {
+    width: calc(60% + 40px)
 }
 .wrapper h1 {
     font-weight: 500;
@@ -244,4 +253,8 @@ p {
 } */
 .modal-header {
     background-color: #6d4d41 !important;
+}
+.table-responsive {
+    display: none;
+
 }

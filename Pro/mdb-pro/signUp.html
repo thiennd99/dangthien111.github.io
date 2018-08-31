@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/booking.css">
     <!-- <link rel="stylesheet" href="css/pricing.css"> -->
+    <link rel="stylesheet" href="css/responsive-2.css">
 </head>
 
 <body class="fixed-sn light-blue-skin">
@@ -101,7 +102,7 @@
                         </li>
                         <li>
                             <a class="collapsible-header waves-effect arrow-r" href="pricing.html">
-                                <i class="fa fa-hand-pointer-o" ></i> PRICES & SERVICES
+                                <i class="fa fa-hand-pointer-o"></i> PRICES & SERVICES
                                 <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
                             </a>
                             <!-- <div class="collapsible-body">
@@ -132,11 +133,11 @@
                             </div> -->
                         </li>
                         <li>
-                                <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
-                                    
-                                    <i class="fab fa-blogger-b" style="margin-right: 14px"></i> BLOG
-                                    <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
-                                </a>
+                            <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
+
+                                <i class="fab fa-blogger-b" style="margin-right: 14px"></i> BLOG
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
                         </li>
                         <li>
                             <a class="collapsible-header waves-effect arrow-r">
@@ -187,10 +188,11 @@
 
 
                     </ul>
-                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px" data-toggle="modal" data-target="#elegantModalForm">
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px"
+                        data-toggle="modal" data-target="#elegantModalForm">
                         Sign In</button>
-                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px"  onclick="window.location.href='signUp.html'" >Sign
-                        Up
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px"
+                        onclick="window.location.href='signUp.html'">Sign Up
                     </button>
                     <div class="clear" style="clear: both"></div>
                 </li>
@@ -244,22 +246,30 @@
 
                 </div>
                 <div class="right">
-                    <input type="text" style="width: 30%">
-                    <input type="text" style="width: 30%">
-                    <input type="date">
-                    <input type="text" style="width: 30%">
-                    <input type="text" style="width: 30%">
-                    <input type="text" style="width: 30%">
-                    <input type="text" style="width: 30%">
-                    <select name="" id="" style="width: 50%;">
-                        <option value="">Germany</option>
-                        <option value="">Spain</option>
-                        <option value="">Italia</option>
-                        <option value="">Portugal</option>
-                        <option value="">Vietnam</option>
-                    </select>
-                    <input type="email">
-                    <input type="text">
+                    <div class="name"> <input id="firstname" type="text" style="width: 30%;padding-left: 10px" placeholder="First name">
+                        <input id="lastname" type="text" style="width: 30%;padding-left: 10px" placeholder="Last name"></div>
+                    <div class="birthday">
+                        <input type="date" style="padding-left: 10px">
+                    </div>
+                    <div class="street">
+                        <input id="strasse" type="text" style="width: 30%;padding-left: 10px" placeholder="Main-St">
+                        <input type="text" style="width: 30%;padding-left: 10px" placeholder="1234">
+                    </div>
+                    <div class="zip">
+                        <input type="text" style="width: 30%;padding-left: 10px" placeholder="11206-1117" id="zip">
+                        <input type="text" style="width: 30%;padding-left: 10px" placeholder="New York City">
+                    </div>
+                    <div class="country">
+                        <select name="" class="custom-select">
+                            <option value="">Germany</option>
+                            <option value="">Spain</option>
+                            <option value="">Italia</option>
+                            <option value="">Portugal</option>
+                            <option value="">Vietnam</option>
+                        </select>
+                    </div>
+                    <div><input id="email" type="email" style="padding-left: 10px;width: calc(60% + 40px)" placeholder="Email"></div>
+                    <div> <input id="tel" type="tel" style="padding-left: 10px;width: calc(60% + 40px)" placeholder="123-4567-8901"></div>
                 </div>
                 <div class="clear"></div>
                 <h1>Which type of payment do you prefer?</h1>
@@ -298,8 +308,8 @@
 
                         </div>
                         <div class="right other">
-                            <input type="text" placeholder=" Card number">
-                            <input type="text" placeholder=" MM / YY CVC">
+                            <input style="padding-left: 10px" type="text" placeholder="Card number">
+                            <input style="padding-left: 10px" type="text" placeholder="MM / YY CVC">
 
                         </div>
                         <div class="clear"></div>
@@ -307,100 +317,109 @@
                     <!-- Material checked -->
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="materialInline1" checked>
-                        <label class="form-check-label" for="materialInline1">Privacy policy: I accept the Privacy policy and confirm that Office Club may contact me via email in order to inform about news regarding its services. This consent may be cancelled at any time via email to info@officeclub.com or by unsubscribing via one of the emails' footer.</label>
+                        <label class="form-check-label" for="materialInline1">Privacy policy: I accept the Privacy policy
+                            and confirm that Office Club may contact me via email in order to inform about news regarding
+                            its services. This consent may be cancelled at any time via email to info@officeclub.com or by
+                            unsubscribing via one of the emails' footer.</label>
                         <input type="checkbox" class="form-check-input" id="materialInline2" checked>
-                        <label class="form-check-label" for="materialInline2">Terms and conditions: I have read and accept the Terms & Conditions.</label>
+                        <label class="form-check-label" for="materialInline2">Terms and conditions: I have read and accept
+                            the Terms & Conditions.</label>
                     </div>
-                    <button class="btn waves-effect btn-rounded" style="margin: 15px 0; background-color: #6d4d41"
-                    data-toggle="modal" data-target="#centralModalSuccess"  >Confirm</button>
+                    <button class="btn waves-effect btn-rounded" style="margin: 15px 0; background-color: #6d4d41" data-toggle="modal" data-target="#centralModalSuccess">Confirm</button>
                 </div>
                 <!-- Central Modal Medium Success -->
-<div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-notify modal-success" role="document">
-            <!--Content-->
-            <div class="modal-content">
-                <!--Header-->
-                <div class="modal-header my-header">
-                    <p class="heading lead">Congratulations !</p>
-        
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="white-text">&times;</span>
-                    </button>
-                </div>
-        
-                <!--Body-->
-                <div class="modal-body">
-                    <div class="text-center">
-                        <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
-                        <p>Your account has been created successfully.</p>
+                <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-notify modal-success" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header my-header">
+                                <p class="heading lead">Congratulations !</p>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text">&times;</span>
+                                </button>
+                            </div>
+
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="text-center">
+                                    <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                                    <p>Your account has been created successfully.</p>
+                                </div>
+                            </div>
+
+                            <!--Footer-->
+                            <div class="modal-footer justify-content-center">
+                                <a type="button" class="btn my-btn-success " href="index.html"> OK </a>
+
+                            </div>
+                        </div>
+                        <!--/.Content-->
                     </div>
                 </div>
-        
-                <!--Footer-->
-                <div class="modal-footer justify-content-center">
-                    <a type="button" class="btn my-btn-success " href="index.html"> OK </a>
-                    
-                </div>
-            </div>
-            <!--/.Content-->
-        </div>
-        </div>
-        <!-- Central Modal Medium Success-->
+                <!-- Central Modal Medium Success-->
             </div>
         </div>
-           <!-- Modal -->
-           <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <!--Content-->
-                    <div class="modal-content form-elegant">
-                        <!--Header-->
-                        <div class="modal-header text-center">
-                            <h3 style="color:white" class="modal-title w-100  font-weight-bold my-3" id="myModalLabel"><strong>Sign
-                                    in</strong></h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+        <!-- Modal -->
+        <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <!--Content-->
+                <div class="modal-content form-elegant">
+                    <!--Header-->
+                    <div class="modal-header text-center">
+                        <h3 style="color:white" class="modal-title w-100  font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                                in
+                            </strong></h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body mx-4">
+                        <!--Body-->
+                        <div class="md-form mb-5">
+                            <input type="email" id="Form-email1" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                        </div>
+
+                        <div class="md-form pb-3">
+                            <input type="password" id="Form-pass1" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                            <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#" class=" ml-1"
+                                    style="color: #6d4d41">
+                                    Password?</a></p>
+                        </div>
+
+                        <div class="text-center mb-3">
+                            <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign
+                                in
                             </button>
                         </div>
-                        <!--Body-->
-                        <div class="modal-body mx-4">
-                            <!--Body-->
-                            <div class="md-form mb-5">
-                                <input type="email" id="Form-email1" class="form-control validate">
-                                <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
-                            </div>
+                        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
+                            in with:</p>
 
-                            <div class="md-form pb-3">
-                                <input type="password" id="Form-pass1" class="form-control validate">
-                                <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
-                                <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#" class=" ml-1" style="color: #6d4d41">
-                                    Password?</a></p>
-                            </div>
-
-                            <div class="text-center mb-3">
-                                <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign in</button>
-                            </div>
-                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
-                                in with:</p>
-
-                            <div class="row my-3 d-flex justify-content-center">
-                                <!--Facebook-->
-                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center" style="color: #6d4d41"></i></button>
-                                <!--Twitter-->
-                                <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter" style="color: #6d4d41"></i></button>
-                                <!--Google +-->
-                                <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g" style="color: #6d4d41"></i></button>
-                            </div>
-                        </div>
-                        <!--Footer-->
-                        <div class="modal-footer mx-5 pt-3 mb-1">
-                            <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="signUp.html" class="ml-1" style="color: #6d4d41">
-                                Sign Up</a></p>
+                        <div class="row my-3 d-flex justify-content-center">
+                            <!--Facebook-->
+                            <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center"
+                                    style="color: #6d4d41"></i></button>
+                            <!--Twitter-->
+                            <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter" style="color: #6d4d41"></i></button>
+                            <!--Google +-->
+                            <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g" style="color: #6d4d41"></i></button>
                         </div>
                     </div>
-                    <!--/.Content-->
+                    <!--Footer-->
+                    <div class="modal-footer mx-5 pt-3 mb-1">
+                        <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="signUp.html" class="ml-1"
+                                style="color: #6d4d41">
+                                Sign Up</a></p>
+                    </div>
                 </div>
+                <!--/.Content-->
             </div>
-            <!-- Modal -->
+        </div>
+        <!-- Modal -->
     </main>
     <!--Main Layout-->
 
@@ -449,8 +468,8 @@
         }
     </script>
     <script>
-    $("#centralModalSuccess").on('show.bs.modal',
-);
+        $("#centralModalSuccess").on('show.bs.modal',
+        );
     </script>
 </body>
 
