@@ -136,8 +136,11 @@ tr:nth-child(7) {
 
 }
 .country select {
-    width: calc(60% + 40px) ;
+    width: calc(61% + 40px) ;
     
+}
+.btn-floating {
+    background-color: #6d4d41 !important
 }
 .birthday input {
     width: calc(60% + 40px)

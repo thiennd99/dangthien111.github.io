@@ -246,6 +246,10 @@ html {
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
 }
+.btn-floating {
+    background-color: #6d4d41 !important;
+    visibility: hidden;
+}
 
 .descript {
     color: #000000;

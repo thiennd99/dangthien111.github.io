@@ -258,14 +258,15 @@
     <main>
         <div class="banner my-container-fluid">
             <div class="box-banner">
-                <div class="box-detail">
-                    <p class="headline"  >
+                <div class="box-detail" id="top-section">
+                    <p class="headline">
                         <span class=""> YOUR FIRST PLACE</span>
                         <br>
                         <span class="">AFTER HOME</span>
                     </p>
                     <a href="booking.html">
-                        <button type="button" data-wow-delay = "1s" class=" my_btn btn-brown waves-effect waves-light">BOOK NOW
+                        <button type="button" data-wow-delay="1s" class=" my_btn btn-brown waves-effect waves-light">BOOK
+                            NOW
                         </button>
                     </a>
                 </div>
@@ -283,10 +284,10 @@
         <div class="body">
             <div class="introduce" id="my-co">
                 <h1 class="line wow fadeInLeft">WE ARE COWORK</h1>
-                <p class="descript wow fadeInRight">COWORK is open coworking space that hosted 700+ entrepreneurs and freelancers. We support
-                    their growth through classes, events and partnerships. Whether you are an independent, an entrepreneur
-                    building a startup, a small business owner or a corporate innovator, COWORK is a place to imagine and
-                    pursue what’s possible.</p>
+                <p class="descript wow fadeInRight">COWORK is open coworking space that hosted 700+ entrepreneurs and freelancers.
+                    We support their growth through classes, events and partnerships. Whether you are an independent, an
+                    entrepreneur building a startup, a small business owner or a corporate innovator, COWORK is a place to
+                    imagine and pursue what’s possible.</p>
             </div>
             <div class="slide-show ">
                 <div class="tab ">
@@ -309,12 +310,12 @@
                                     <i class="fas fa-chart-line"></i>
                                 </div>
                             </li>
-                            <li  class="tablinks wow fadeInRightBig" onclick="openCity(event,'4')">
+                            <li class="tablinks wow fadeInRightBig" onclick="openCity(event,'4')">
                                 <div>
                                     <i class="fas fa-utensils"></i>
                                 </div>
                             </li>
-                            <li  class="tablinks wow fadeInRightBig" onclick="openCity(event,'5')">
+                            <li class="tablinks wow fadeInRightBig" onclick="openCity(event,'5')">
                                 <div>
                                     <i class="fas fa-bed"></i>
                                 </div>
@@ -854,22 +855,24 @@
 
             </div>
             <div class="subscribe">
-               <div class="wow fadeInRight"> <h1 class="box-line">Follow Cowork’s Latest News and Events </h1></div>
+                <div class="wow fadeInRight">
+                    <h1 class="box-line">Follow Cowork’s Latest News and Events </h1>
+                </div>
                 <!-- Material input -->
                 <div class="wrap-form wow fadeInLeftBig">
                     <div class="md-form my_form  ">
                         <i class="fa fa-envelope prefix"></i>
                         <input type="email" id="inputValidationEx" class="form-control validate">
                         <label for="inputValidationEx" data-error="wrong" data-success="right">Type your email</label>
-                        <button  type="button" class="btn btn-brown">Subscribe</button>
+                        <button type="button" class="btn btn-brown">Subscribe</button>
                     </div>
                 </div>
-               <div class="wow fadeInUp">
+                <div class="wow fadeInUp">
                     <div class="img-footer ">
-                            <img src="my_img/logo.png" alt="">
-                        </div>
-                        <p class="copyright ">Copyright © 2018 CoWork. All rights reserved. </p>
-               </div>
+                        <img src="my_img/logo.png" alt="">
+                    </div>
+                    <p class="copyright ">Copyright © 2018 CoWork. All rights reserved. </p>
+                </div>
             </div>
             <!-- Modal -->
             <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -932,7 +935,11 @@
                 </div>
             </div>
             <!-- Modal -->
-
+            <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+                <a href="#top-section" class="btn-floating btn-brown ">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+            </div>
     </main>
     <!--Main Layout-->
 
@@ -1014,6 +1021,24 @@
     </script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        $(window).bind('scroll', function(){
+            var currentTop = $(window).scrollTop();
+        var show = $(".descript").offset().top;
+        console.log(currentTop);
+        if (currentTop >= show) {
+            $('.btn-floating').css('visibility', 'visible');
+            $('.btn-floating').css('opacity', '1');
+            $('.btn-floating').css('transition', '.7s');
+        }
+           
+        else {$('.btn-floating').css('visibility', 'hidden');
+        $('.btn-floating').css('opacity', '0');
+
+        $('.btn-floating').css('transition', '.7s');
+        }
+        })
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
