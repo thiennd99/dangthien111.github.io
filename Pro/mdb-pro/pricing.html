@@ -212,7 +212,7 @@
     <!--Main Layout-->
     <main>
         <div class="banner my-container-fluid">
-            <div class="box-banner">
+            <div class="box-banner"  id="top-section">
                 <div class="box-detail">
                     <p class="headline">
                         PRICES & SERVICES
@@ -229,12 +229,12 @@
 
         </div>
         <div class="body">
-            <div class="my-description">
+            <div class="my-description wow fadeIn ">
                 <p>This is where we summarized all our prices and services for you to have a look and download at any time.
                     All prices are net prices excluding valid VAT. If you need assistance with your booking or have any questions,
                     feel free to contact us right away – we're standing by.</p>
             </div>
-            <div class="voucher">
+            <div class="voucher wow flipInX">
                 <div class="time-line">
                     1 DAY <br> FOR FREE
                 </div>
@@ -248,7 +248,7 @@
                     <button class="btn btn-rounded waves-effect">Get your voucher</button>
                 </div>
             </div>
-            <div class="table">
+            <div class="table wow fadeInUp">
                 <table>
                     <tr>
                         <th style="text-align: left; color: white;background-color: #6d4d41;">
@@ -419,11 +419,16 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="foot-logo">
+            <div class="foot-logo wow pulse">
                 <div class="img-footer">
                     <img src="my_img/logo.png" alt="">
                 </div>
                 <p class="copyright">Copyright © 2018 CoWork. All rights reserved. </p>
+            </div>
+            <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+                <a href="#top-section" class="btn-floating btn-brown ">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
             </div>
         </div>
     </main>
@@ -453,6 +458,28 @@
         var sideNavScrollbar = document.querySelector('.custom-scrollbar');
         Ps.initialize(sideNavScrollbar);
 
+    </script>
+    <script>
+        new WOW().init()
+    </script>
+    <script>
+        $(window).bind('scroll', function () {
+            var currentTop = $(window).scrollTop();
+            var show = $(".body").offset().top;
+            console.log(currentTop);
+            if (currentTop >= show) {
+                $('.btn-floating').css('visibility', 'visible');
+                $('.btn-floating').css('opacity', '1');
+                $('.btn-floating').css('transition', '.7s');
+            }
+
+            else {
+                $('.btn-floating').css('visibility', 'hidden');
+                $('.btn-floating').css('opacity', '0');
+
+                $('.btn-floating').css('transition', '.7s');
+            }
+        })
     </script>
 </body>
 

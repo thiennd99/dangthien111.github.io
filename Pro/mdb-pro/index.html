@@ -867,7 +867,7 @@
                         <button type="button" class="btn btn-brown">Subscribe</button>
                     </div>
                 </div>
-                <div class="wow fadeInUp">
+                <div class="wow ">
                     <div class="img-footer ">
                         <img src="my_img/logo.png" alt="">
                     </div>
@@ -935,7 +935,7 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+            <div class="fixed-action-btn smooth-scroll wow fadeInUpBig" style="bottom: 45px; right: 24px;">
                 <a href="#top-section" class="btn-floating btn-brown ">
                     <i class="fa fa-arrow-up"></i>
                 </a>
@@ -1023,21 +1023,22 @@
         new WOW().init();
     </script>
     <script>
-        $(window).bind('scroll', function(){
+        $(window).bind('scroll', function () {
             var currentTop = $(window).scrollTop();
-        var show = $(".descript").offset().top;
-        console.log(currentTop);
-        if (currentTop >= show) {
-            $('.btn-floating').css('visibility', 'visible');
-            $('.btn-floating').css('opacity', '1');
-            $('.btn-floating').css('transition', '.7s');
-        }
-           
-        else {$('.btn-floating').css('visibility', 'hidden');
-        $('.btn-floating').css('opacity', '0');
+            var show = $(".descript").offset().top;
+            console.log(currentTop);
+            if (currentTop >= show) {
+                $('.btn-floating').css('visibility', 'visible');
+                $('.btn-floating').css('opacity', '1');
+                $('.btn-floating').css('transition', '.7s');
+            }
 
-        $('.btn-floating').css('transition', '.7s');
-        }
+            else {
+                $('.btn-floating').css('visibility', 'hidden');
+                $('.btn-floating').css('opacity', '0');
+
+                $('.btn-floating').css('transition', '.7s');
+            }
         })
     </script>
 

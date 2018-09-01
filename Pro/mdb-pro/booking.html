@@ -215,7 +215,7 @@
     <!--Main Layout-->
     <main>
         <div class="banner my-container-fluid">
-            <div class="box-banner">
+            <div class="box-banner"  id="top-section">
                 <div class="box-detail">
                     <p class="headline">Booking</p>
                 </div>
@@ -225,20 +225,22 @@
         </div>
         <div class="body">
             <div class="description">
-                <h1>Choose your service</h1>
-                <p>Choose your membership and the desired starting date. Optional additional services - e.g. a drink flat
-                    rate, lockers or your 24/7 access - may be added in the following step. Our memberships have a minimum
-                    term of one resp. three calendar months only and may be switched or cancelled at the end of each term.
-                    If you do not wish to change anything the term of your membership will be automatically renewed for the
-                    same amount of time (and so on). Very convenient. All prizes are net prizes excluding VAT.</p>
+                <h1 class="wow fadeInLeft">Choose your service</h1>
+                <p class="wow fadeIn">Choose your membership and the desired starting date. Optional additional services
+                    - e.g. a drink flat rate, lockers or your 24/7 access - may be added in the following step. Our memberships
+                    have a minimum term of one resp. three calendar months only and may be switched or cancelled at the end
+                    of each term. If you do not wish to change anything the term of your membership will be automatically
+                    renewed for the same amount of time (and so on). Very convenient. All prizes are net prizes excluding
+                    VAT.
+                </p>
             </div>
-            <div class="infos">
+            <div class="infos wow fadeIn">
                 <h4>Location:</h4>
                 <p>Frankfurt, German</p>
                 <h4>Starting date:</h4>
                 <input id="today" type="date" min="2018-08-23">
             </div>
-            <div class="price-table">
+            <div class="price-table wow zoomIn">
 
                 <table class="my-table">
                     <thead>
@@ -757,13 +759,12 @@
                     </div>
                 </div>
                 <div class="total-responsive">
-                        <span> <b>Total:</b>
-                        </span>
-                        <div class="totalResult"> 0.00 $</div>
+                    <span> <b>Total:</b>
+                    </span>
+                    <div class="totalResult"> 0.00 $</div>
                 </div>
                 <div class="btn-respon">
-                        <button class="btn waves-effect btn-rounded" style="background-color: #6d4d41"
-                        data-toggle="modal" data-target="#elegantModalForm">Confirm</button>
+                    <button class="btn waves-effect btn-rounded" style="background-color: #6d4d41" data-toggle="modal" data-target="#elegantModalForm">Confirm</button>
                 </div>
 
 
@@ -830,11 +831,16 @@
             </div>
             <!-- Modal -->
 
-            <div class="foot-logo">
+            <div class="foot-logo wow pulse">
                 <div class="img-footer">
                     <img src="my_img/logo.png" alt="">
                 </div>
                 <p class="copyright">Copyright © 2018 CoWork. All rights reserved. </p>
+            </div>
+            <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+                <a href="#top-section" class="btn-floating btn-brown ">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
             </div>
         </div>
     </main>
@@ -1171,6 +1177,28 @@
         }
 
 
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(window).bind('scroll', function () {
+            var currentTop = $(window).scrollTop();
+            var show = $(".description").offset().top;
+            console.log(currentTop);
+            if (currentTop >= show) {
+                $('.btn-floating').css('visibility', 'visible');
+                $('.btn-floating').css('opacity', '1');
+                $('.btn-floating').css('transition', '.7s');
+            }
+
+            else {
+                $('.btn-floating').css('visibility', 'hidden');
+                $('.btn-floating').css('opacity', '0');
+
+                $('.btn-floating').css('transition', '.7s');
+            }
+        })
     </script>
 </body>
 

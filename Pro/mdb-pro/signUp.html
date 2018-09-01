@@ -212,7 +212,7 @@
     </header>
     <!--Main Layout-->
     <main>
-        <div class="banner my-container-fluid">
+        <div class="banner my-container-fluid" id="top-section">
             <div class="box-banner">
                 <div class="box-detail">
                     <p class="headline">Account</p>
@@ -223,8 +223,8 @@
         </div>
         <div class="body">
             <div class="wrapper">
-                <h1>Create a new account</h1>
-                <div class="left">
+                <h1 class="wow fadeInUp">Create a new account</h1>
+                <div class="left wow fadeInLeft">
                     <label for="">First / last name</label>
 
                     <br>
@@ -245,7 +245,7 @@
                     <label for="">Telephone</label>
 
                 </div>
-                <div class="right">
+                <div class="right wow fadeInRight">
                     <div class="name"> <input id="firstname" type="text" style="width: 30%;padding-left: 10px" placeholder="First name">
                         <input id="lastname" type="text" style="width: 30%;padding-left: 10px" placeholder="Last name"></div>
                     <div class="birthday">
@@ -272,22 +272,22 @@
                     <div> <input id="tel" type="tel" style="padding-left: 10px;width: calc(60% + 40px)" placeholder="123-4567-8901"></div>
                 </div>
                 <div class="clear"></div>
-                <h1>Which type of payment do you prefer?</h1>
+                <h1 class="wow fadeInUp">Which type of payment do you prefer?</h1>
                 <div class="tabs">
-                    <div class="sepa tablink" onclick="openClass(event,'1')" id="default">
+                    <div class="sepa tablink wow fadeInUp" onclick="openClass(event,'1')" id="default">
                         <span class="center">
                             <i class="far fa-edit"></i>
                             <p>SEPA direct debit</p>
                         </span>
                     </div>
-                    <div class="credit tablink" onclick="openClass(event,'2')">
+                    <div class="credit tablink wow fadeInUp" onclick="openClass(event,'2')">
                         <span class="center">
                             <i class="far fa-credit-card"></i>
                             <p>Credit card</p>
                         </span>
                     </div>
                     <div class="clear"></div>
-                    <div class="tabcontent" id="1">
+                    <div class="tabcontent wow fadeIn" id="1">
                         <h3 class="linecard">SEPA Lastschrift</h3>
                         <div class="left">
                             <label for="">Account holder</label> <br>
@@ -315,7 +315,7 @@
                         <div class="clear"></div>
                     </div>
                     <!-- Material checked -->
-                    <div class="form-check">
+                    <div class="form-check wow fadeIn">
                         <input type="checkbox" class="form-check-input" id="materialInline1" checked>
                         <label class="form-check-label" for="materialInline1">Privacy policy: I accept the Privacy policy
                             and confirm that Office Club may contact me via email in order to inform about news regarding
@@ -420,6 +420,11 @@
             </div>
         </div>
         <!-- Modal -->
+        <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+            <a href="#top-section" class="btn-floating btn-brown ">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+        </div>
     </main>
     <!--Main Layout-->
 
@@ -470,6 +475,26 @@
     <script>
         $("#centralModalSuccess").on('show.bs.modal',
         );
+        new WOW().init();
+    </script>
+    <script>
+        $(window).bind('scroll', function () {
+            var currentTop = $(window).scrollTop();
+            var show = $(".body").offset().top;
+            console.log(currentTop);
+            if (currentTop >= show) {
+                $('.btn-floating').css('visibility', 'visible');
+                $('.btn-floating').css('opacity', '1');
+                $('.btn-floating').css('transition', '.7s');
+            }
+
+            else {
+                $('.btn-floating').css('visibility', 'hidden');
+                $('.btn-floating').css('opacity', '0');
+
+                $('.btn-floating').css('transition', '.7s');
+            }
+        })
     </script>
 </body>
 
