@@ -43,5 +43,10 @@
     .description h2 {
         font-size: 25px;
     }
-   
+    .news-img i {
+        font-size: 12px;
+    }
+    .info-artikel span {
+        font-size: 18px;
+    }
 }

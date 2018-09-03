@@ -59,7 +59,9 @@ html {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 } */
-
+.PoweredBy {
+    display: none !important; 
+}
 .my_btn {
     /* border-radius: 15px; */
     border: 0;
@@ -71,10 +73,10 @@ html {
     text-transform: uppercase;
     transform: translate(-50%, -50%);
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     font-size: 1em;
-    padding: 10px;
+    padding: 15px 20px;
     font-weight: 200;
     width: 300px
 }
@@ -186,6 +188,10 @@ html {
     width: 100%;
 
 }
+#demo-canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
 .headline {
     width: 100%;
     color: white;
@@ -211,7 +217,7 @@ html {
     font-family: 'Arbutus Slab', serif;
     text-align: center;
    
-    padding-top: 30px;
+    padding-top: 40px;
     position: relative;
     
 }
@@ -233,7 +239,7 @@ html {
 .descript::before {
     content: "";
     display: block;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 100px;
     height: 2px;
     background-color: #979797;
@@ -402,7 +408,7 @@ img {
 }
 .price-line {
     color: white;
-    padding-top: 70px;
+    padding-top: 40px;
 }
 .price-line::after {
     content: "";
@@ -422,7 +428,7 @@ img {
 .box-price::before {
     content: "";
     display: block;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 65px;
     height: 2px;
     background-color: white ;
@@ -441,7 +447,11 @@ img {
     padding-top: 30px;
     padding-bottom: 30px
 }
+#status {
+    visibility: hidden; 
+}
 .price {
+    margin-top: 50px;
     position: relative;
     width: 100%;
 

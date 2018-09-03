@@ -84,7 +84,7 @@ tr:nth-child(7) {
     border: 0
 }
 .price-table {
-    height: 1000px
+    height: 700px
 }
 
 .totalResult {
@@ -139,9 +139,7 @@ tr:nth-child(7) {
     width: calc(61% + 40px) ;
     
 }
-.btn-floating {
-    background-color: #6d4d41 !important
-}
+
 .birthday input {
     width: calc(60% + 40px)
 }

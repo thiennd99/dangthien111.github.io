@@ -20,7 +20,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
-
+    <link rel="stylesheet" type="text/css" href="Effect-Banner/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="Effect-Banner/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="Effect-Banner/css/component.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
 
 
     <link href="css/style.css" rel="stylesheet">
@@ -257,7 +260,7 @@
     <!--Main Layout-->
     <main>
         <div class="banner my-container-fluid">
-            <div class="box-banner">
+            <!-- <div class="box-banner">
                 <div class="box-detail" id="top-section">
                     <p class="headline">
                         <span class=""> YOUR FIRST PLACE</span>
@@ -270,7 +273,21 @@
                         </button>
                     </a>
                 </div>
+                
 
+            </div> -->
+            <div id="large-header" class="large-header box-banner">
+                <canvas id="demo-canvas" style="width: 100%; height: 100%;"></canvas>
+
+                <p class="headline">
+                    <span class=""> YOUR FIRST PLACE</span>
+                    <br>
+                    <span class="">AFTER HOME</span>
+                </p>
+                <a href="booking.html">
+                    <button type="button" data-wow-delay="1s" class=" my_btn btn-brown waves-effect waves-light">BOOK NOW
+                    </button>
+                </a>
             </div>
 
         </div>
@@ -725,9 +742,9 @@
                                         <img src="my_img/blog-img.jpg" alt="">
                                     </div>
                                     <div class="description">
-                                        <h2>
+                                      <a href="detail.html">  <h2>
 
-                                            Global Coworking Studies: So hat sich Coworking verändert</h2>
+                                            Global Coworking Studies: So hat sich Coworking verändert</h2></a>
                                         <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider
                                             des Arbeitens aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
                                     </div>
@@ -744,11 +761,9 @@
                                         <img src="my_img/blog-img-1.jpg" alt="">
                                     </div>
                                     <div class="description">
-                                        <h2>
+                                            <a href="detail.html">  <h2>
 
-
-
-                                            Global Coworking Studies: So hat sich Coworking verändert</h2>
+                                                    Global Coworking Studies: So hat sich Coworking verändert</h2></a>
                                         <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider
                                             des Arbeitens aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
                                     </div>
@@ -765,8 +780,9 @@
                                         <img src="my_img/blog-img-2.jpg" alt="">
                                     </div>
                                     <div class="description">
-                                        <h2>
-                                            Global Coworking Studies: So hat sich Coworking verändert</h2>
+                                            <a href="detail.html">  <h2>
+
+                                                    Global Coworking Studies: So hat sich Coworking verändert</h2></a>
                                         <p>In unserem letzten Blog-Beitrag haben wir uns ausführlich mit dem Für und Wider
                                             des Arbeitens aus dem Home Office aus beschäftigt und dies mit Vor[…]</p>
                                     </div>
@@ -867,7 +883,7 @@
                         <button type="button" class="btn btn-brown">Subscribe</button>
                     </div>
                 </div>
-                <div class="wow ">
+                <div class="wow fadeInUp">
                     <div class="img-footer ">
                         <img src="my_img/logo.png" alt="">
                     </div>
@@ -935,7 +951,7 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="fixed-action-btn smooth-scroll wow fadeInUpBig" style="bottom: 45px; right: 24px;">
+            <div class="fixed-action-btn smooth-scroll wow fadeInUpBig" style="bottom: 75px; right: 24px;">
                 <a href="#top-section" class="btn-floating btn-brown ">
                     <i class="fa fa-arrow-up"></i>
                 </a>
@@ -1041,9 +1057,13 @@
             }
         })
     </script>
+    <script src="Effect-Banner/js/EasePack.min.js"></script>
+    <script src="Effect-Banner/js/TweenLite.min.js"></script>
+    <script src="Effect-Banner/js/rAF.js"></script>
+    <script src="Effect-Banner/js/demo-1.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-
+    <script src="https://embed.small.chat/T2R6NDM27GCKNJ9074.js" async></script>
 </body>
 
 </html>

@@ -245,32 +245,37 @@
                     <label for="">Telephone</label>
 
                 </div>
-                <div class="right wow fadeInRight">
-                    <div class="name"> <input id="firstname" type="text" style="width: 30%;padding-left: 10px" placeholder="First name">
-                        <input id="lastname" type="text" style="width: 30%;padding-left: 10px" placeholder="Last name"></div>
-                    <div class="birthday">
-                        <input type="date" style="padding-left: 10px">
+                <form id="contact-form" name="contact-form" onsubmit="return validateForm()">
+                    <div class="right wow fadeInRight">
+                        <div class="name"> <input id="name" type="text" style="width: 30%;padding-left: 10px" placeholder="First name"
+                                required="required">
+                            <input id="lastname" type="text" style="width: 30%;padding-left: 10px" placeholder="Last name" required="required"></div>
+                        <div class="birthday">
+                            <input type="date" style="padding-left: 10px" required="required">
+                        </div>
+                        <div class="street">
+                            <input id="strasse" type="text" style="width: 30%;padding-left: 10px" placeholder="Main-St" required="required">
+                            <input type="text" style="width: 30%;padding-left: 10px" placeholder="1234" required="required">
+                        </div>
+                        <div class="zip">
+                            <input type="text" style="width: 30%;padding-left: 10px" placeholder="11206-1117" id="zip" required="required">
+                            <input type="text" style="width: 30%;padding-left: 10px" placeholder="New York City" required="required">
+                        </div>
+                        <div class="country">
+                            <select name="" class="custom-select">
+                                <option value="">Germany</option>
+                                <option value="">Spain</option>
+                                <option value="">Italia</option>
+                                <option value="">Portugal</option>
+                                <option value="">Vietnam</option>
+                            </select>
+                        </div>
+                        <div><input id="email" type="email" style="padding-left: 10px;width: calc(60% + 40px)" placeholder="Email"
+                                required="required"></div>
+                        <div> <input id="tel" type="tel" style="padding-left: 10px;width: calc(60% + 40px)" placeholder="123-4567-8901"
+                                required="required"></div>
                     </div>
-                    <div class="street">
-                        <input id="strasse" type="text" style="width: 30%;padding-left: 10px" placeholder="Main-St">
-                        <input type="text" style="width: 30%;padding-left: 10px" placeholder="1234">
-                    </div>
-                    <div class="zip">
-                        <input type="text" style="width: 30%;padding-left: 10px" placeholder="11206-1117" id="zip">
-                        <input type="text" style="width: 30%;padding-left: 10px" placeholder="New York City">
-                    </div>
-                    <div class="country">
-                        <select name="" class="custom-select">
-                            <option value="">Germany</option>
-                            <option value="">Spain</option>
-                            <option value="">Italia</option>
-                            <option value="">Portugal</option>
-                            <option value="">Vietnam</option>
-                        </select>
-                    </div>
-                    <div><input id="email" type="email" style="padding-left: 10px;width: calc(60% + 40px)" placeholder="Email"></div>
-                    <div> <input id="tel" type="tel" style="padding-left: 10px;width: calc(60% + 40px)" placeholder="123-4567-8901"></div>
-                </div>
+                </form>
                 <div class="clear"></div>
                 <h1 class="wow fadeInUp">Which type of payment do you prefer?</h1>
                 <div class="tabs">
@@ -325,7 +330,9 @@
                         <label class="form-check-label" for="materialInline2">Terms and conditions: I have read and accept
                             the Terms & Conditions.</label>
                     </div>
-                    <button class="btn waves-effect btn-rounded" style="margin: 15px 0; background-color: #6d4d41" data-toggle="modal" data-target="#centralModalSuccess">Confirm</button>
+                    <button id="confirm" class="btn waves-effect btn-rounded" style="margin: 15px 0; background-color: #6d4d41" onclick="validateForm()"
+                        data-toggle="modal" data-target="">Confirm</button>
+                    <div class="status alert alert-danger" id="status"></div>
                 </div>
                 <!-- Central Modal Medium Success -->
                 <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -420,7 +427,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+        <div class="fixed-action-btn smooth-scroll" style="bottom: 75px; right: 24px;">
             <a href="#top-section" class="btn-floating btn-brown ">
                 <i class="fa fa-arrow-up"></i>
             </a>
@@ -496,6 +503,56 @@
             }
         })
     </script>
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+
+            if (name == "") {
+                var danger = document.getElementById('status');
+                danger.style.visibility = "visible"
+                document.getElementById('status').innerHTML = "Name cannot be empty";
+                return false;
+            }
+            var email = document.getElementById('email').value;
+            if (email == "") {
+                var danger = document.getElementById('status');
+                danger.style.visibility = "visible"
+                document.getElementById('status').innerHTML = "Email cannot be empty";
+                return false;
+            } else {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (!re.test(email)) {
+                    var danger = document.getElementById('status');
+                    danger.style.visibility = "visible"
+                    document.getElementById('status').innerHTML = "Email format invalid";
+                    return false;
+                } else {
+                    var danger = document.getElementById('status');
+                    danger.style.visibility = "hidden"
+                    var data = document.getElementById('confirm');
+                    data.setAttribute('data-target', '#centralModalSuccess')
+                }
+            }
+            var subject = document.getElementById('subject').value;
+            if (subject == "") {
+                var danger = document.getElementById('status');
+                danger.style.visibility = "visible"
+                document.getElementById('status').innerHTML = "Subject cannot be empty";
+                return false;
+            }
+            var message = document.getElementById('message').value;
+            if (message == "") {
+                var danger = document.getElementById('status');
+                danger.style.visibility = "visible"
+                document.getElementById('status').innerHTML = "Message cannot be empty";
+                return false;
+            }
+            document.getElementById('status').innerHTML = "Sending...";
+            document.getElementById('contact-form').submit();
+
+        }
+    </script>
+    <script src="https://embed.small.chat/T2R6NDM27GCKNJ9074.js" async></script>
 </body>
 
 </html>

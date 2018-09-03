@@ -146,6 +146,6 @@ tr:nth-child(13) td {
 .modal-header {
     background-color: #6d4d41 !important;
 }
-.price-res {
+.price-res, .voucher-res {
     display: none;
 }
