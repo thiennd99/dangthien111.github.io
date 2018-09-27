@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Artikel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://namboss.blob.core.windows.net/huong/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://namboss.blob.core.windows.net/huong/mdb.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/responsive-2.css">
+
+
+</head>
+
+<body class="fixed-sn light-blue-skin">
+
+    <!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-4 fixed custom-scrollbar ps">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper waves-light">
+                        <a href="index.html">
+                            <img src="my_img/logo.png" class="img-fluid flex-center">
+                        </a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <li>
+                            <a href="#" class="icons-sm fb-ic">
+                                <!-- <i class="fab fa-facebook"> </i> -->
+                                <i class="fab fa-facebook-f"></i>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-sm pin-ic">
+                                <!-- <i class="fa fa-pinterest"> </i> -->
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-sm gplus-ic">
+                                <!-- <i class="fa fa-google-plus"> </i> -->
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-sm tw-ic">
+                                <!-- <i class="fa fa-twitter"> </i> -->
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/Social-->
+                <!--Search Form-->
+                <li>
+                    <form class="search-form" role="search">
+                        <div class="form-group md-form mt-0 pt-1 waves-light">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </li>
+                <!--/.Search Form-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r" href="index.html#my-co">
+                                <i class="fa fa-chevron-right" style="margin-right: 17px"></i> MY COWORK
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
+                            <!-- <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="waves-effect">Submit listing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="waves-effect">Registration form</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r" href="pricing.html">
+                                <i class="fa fa-hand-pointer-o"></i> PRICES & SERVICES
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
+                            <!-- <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="waves-effect">For bloggers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="waves-effect">For authors</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r" href="booking.html">
+                                <i class="fa fa-eye" style="margin-right: 11px"></i> BOOKING
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
+                            <!-- <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="waves-effect">Introduction</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="waves-effect">Monthly meetings</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r" href="blog-home.html">
+
+                                <i class="fab fa-blogger-b" style="margin-right: 14px"></i> BLOG
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r">
+                                <!-- <i class="fa fa-envelope-o"></i> -->
+                                <i class="fa fa-envelope" style="margin-right: 12px"></i> CONTACT US
+                                <!-- <i class="fa fa-angle-down rotate-icon"></i> -->
+
+                            </a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+
+
+                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 2, Alley
+                                            59, Ha Noi</a>
+
+                                        </a>
+                                    </li>
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i>No 64, Alley
+                                            49, Lao Cai</a>
+                                    </li>
+
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-phone-volume" style="padding-right: 10px"></i>(+84) 99996666</a>
+                                    </li>
+
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-phone-volume" style="padding-right: 10px"></i>(+84) 66669999</a>
+                                    </li>
+                                    <li>
+
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-at" style="padding-right: 10px"></i>Contactme@gmail.com</a>
+                                        <a class="collapsible-header waves-effect arrow-r" style="font-size: 0.9rem; padding-left: 70px">
+                                            7:30 AM - 9:30 PM</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; margin-left:20px; border-radius: 50px"
+                        data-toggle="modal" data-target="#elegantModalForm">
+                        Sign In</button>
+                    <button type="button" class="btn btn-brown waves-effect waves-light" style="width: 40%; padding: 10px; border-radius: 50px"
+                        onclick="window.location.href='signUp.html'">Sign Up
+                    </button>
+                    <div class="clear" style="clear: both"></div>
+                </li>
+                <!-- /. Side navigation links -->
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <!-- <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"> -->
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!--Main Layout-->
+    <main  id="top-section">
+
+        <div class="body">
+            <div class="wrapper wow fadeInUp">
+                <h1> Global Coworking Studies: So hat sich Coworking</h1>
+                <div class="info-artikel">
+                    <span id="first">23.02.2018</span>
+                    <span>Erstellt von <b><i>Dang Thien</i></b></span>
+                </div>
+                <div class="news-content">
+                    <div class="news-img">
+                        <img src="my_img/blog-img-1.jpg" alt="">
+                        <i>
+                            Nähe fördert Arbeitsproduktivität
+                        </i>
+                    </div>
+                    <div class="news-text">
+                        <p>
+                            Was ist das richtige Arbeitsumfeld für mich? Welche Bedingungen benötige ich zum optimalen Arbeiten? Das fragen sich viele
+                            Berufstätige. Zuviel Ruhe und Abgeschiedenheit kann sich negativ auf die Motivation auswirken;
+                            andererseits hemmt auch ein Zuviel an Lärm und Trubel die Produktivität. Der richtige Mix sollte
+                            es also sein.
+                            <br>
+                            <br>
+                            <b>Identifikation und Sinnstiftung</b>
+                            <br><br> Eine Studie des Harvard Business Review hat untersucht, und dabei Erstaunliches festgestellt:
+                            Die Menschen, die beim Coworking aufeinandertreffen, sehen ihre Arbeit oft als bedeutsamer an
+                            als der Durchschnitt der arbeitenden Bevölkerung. Das liegt zum einen am hohen Anteil an Freelancern
+                            und Selbstständigen, die sich ihre Projekte oft selbst ausgesucht haben und sich so in vergleichsweise
+                            hohem Maße mit ihren Aufgaben identifizieren.
+                            <br><br> Zudem arbeitet fast jeder der Coworker an einem anderen Projekt als sein Nachbar – dadurch
+                            entsteht weniger direkte Konkurrenz und weniger interne Politik. Die Menschen können mehr sie
+                            selbst sein als in einem klassischen Büro, wo sie sich oft eine „Arbeitsidentität“ zulegen. Auch
+                            das stärkt die Identifikation mit der Arbeit.
+                            <br><br>
+                            <b>Selbstbestimmt arbeiten</b>
+                            <br><br> Viele Coworker verbindet zudem das Gefühl der unmittelbaren Kontrolle über ihre Arbeit:
+                            Da Coworking Spaces meist rund um die Uhr geöffnet sind, kann jeder für sich selbst entscheiden,
+                            wann er seine Arbeit erledigt und wann er sich Zeit für Privates nimmt. Diese Art der Freiheit
+                            und Selbstbestimmung sorgt nicht nur für Zufriedenheit in puncto Work-Life-Balance, sondern trägt
+                            ebenfalls dazu bei, die Arbeitsproduktivität zu erhöhen.
+                            <br><br>
+                            <b>Zugehörigkeit und Verbindungen</b>
+                            <br><br> Einen ganz wichtigen Beitrag zu einem produktiven Arbeitsleben leistet auch das Gefühl,
+                            Teil einer Gemeinschaft zu sein, das Coworker untereinander verbindet. Dazu tragen die Betreiber
+                            und Mitarbeiter der Coworking Spaces ihren Teil bei, die ihre Mitglieder oft persönlich mit Namen
+                            kennen und wissen, was sie beruflich machen. Eine Rolle spielt auch, dass viele Spaces zusätzlich
+                            gemeinschaftliche Events anbieten, die ebenfalls das Gefühl der Zugehörigkeit erhöhen.
+                            <br><br>
+                            <b>
+                                Produktivität wirkt ansteckend
+                            </b>
+                            <br><br> Eine weitere neue Studie des Harvard Business Review untermauert die psychologischen
+                            Effekte des gemeinsamen Arbeitens und der geteilten Arbeitsräume auf die Produktivität: Demnach
+                            hat der Umstand, neben wem man sitzt, entscheidende Auswirkungen auf die Arbeitsproduktivität.
+                            Besonders effizienzsteigernd ist es, Menschen mit unterschiedlichen und bestenfalls komplementären
+                            Stärken nebeneinander zu platzieren, da diese dazu neigen, sich gegenseitig zu helfen und zu
+                            verbessern.
+                            <br><br>
+                            <b>Effizienteres Arbeiten, besseres Sozialleben</b>
+                            <br><br> Genau das passiert in Coworking Spaces, wo Menschen aus vielen unterschiedlichen Berufen
+                            und mit ganz verschiedenen Stärken in einer Nicht-Konkurrenzsituation zusammen kommen. So ist
+                            es auch nur zu plausibel, was weitere Untersuchungen herausgefunden haben: dass 74% der Coworker
+                            angeben, produktiver zu arbeiten, seit sie Mitglied eines Coworking Spaces geworden sind.
+                            <br><br> Es zeigt sich zudem, dass eine überwältigende Mehrheit von 92% der Coworker angibt,
+                            dass diese Form des Arbeitens ihr Sozialleben verbessert hat.
+                            <br><br>
+                            <b>Gemeinschaft wirkt</b>
+                            <br><br> Selbstverständlich ist es kein Automatismus, dass gemeinsames Arbeiten die Produktivität
+                            verbessert. Die individuelle persönliche Disposition spielt natürlich immer auch eine Rolle,
+                            und es gibt manche Arten von Arbeit, die sich schlichtweg nicht an einem geteilten Arbeitsplatz
+                            erledigen lassen. Doch die Tendenz ist eindeutig: Die Gemeinschaft macht nicht nur zufriedener,
+                            sondern sorgt auch für mehr Effizienz und Produktivität in der täglichen Arbeit.
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="share-social">
+                        <p><span><b>Share on:</b></span></p>
+                        <!--Facebook-->
+                        <a class="fb-ic mr-3"><i class="fab fa-lg fa-facebook-f"> </i></a>
+                        <!--Twitter-->
+                        <a class="tw-ic mr-3"><i class="fab fa-lg fa-twitter"> </i></a>
+                        <!--Google +-->
+                        <a class="gplus-ic mr-3"><i class="fab fa-lg fa-google-plus"> </i></a>
+                        <!--Linkedin-->
+                        <a class="li-ic mr-3"><i class="fab fa-lg fa-linkedin"> </i></a>
+                        <!--Instagram-->
+                        <a class="ins-ic mr-3"><i class="fab fa-lg fa-instagram"> </i></a>
+                        <!--Pinterest-->
+                        <a class="pin-ic mr-3"><i class="fab fa-lg fa-pinterest"> </i></a>
+                    </div>
+                </div>
+                <div class="comment">
+                    <h2 class="title-comment">Write  new comment</h2>
+
+                    <p for="1">YOUR NAME:</p>
+                    <input type="text" id="1">
+                    <p for="2">YOUR EMAIL ADDRESS:</p>
+                    <input type="email" id="2">
+                   <div class="label-comment">
+                        <i class="fas fa-pencil-alt"></i>
+                    <SPAN>COMMENT:</SPAN>
+                   </div>
+                    <textarea type="text" id="textareaPrefix" class="form-control md-textarea md-textarea-auto" length = "120"  rows="3"></textarea>
+                  
+
+                    <button type="button" class="btn btn-brown waves-effect waves-light btn-rounded">
+                        Submit</button>
+                </div>
+            </div>
+
+            <div class="foot-logo wow fadeInUp">
+                <div class="img-footer">
+                    <img src="my_img/logo.png" alt="">
+                </div>
+                <p class="copyright">Copyright © 2018 CoWork. All rights reserved. </p>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <!--Content-->
+                <div class="modal-content form-elegant">
+                    <!--Header-->
+                    <div class="modal-header text-center">
+                        <h3 style="color:white" class="modal-title w-100  font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                                in
+                            </strong></h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body mx-4">
+                        <!--Body-->
+                        <div class="md-form mb-5">
+                            <input type="email" id="Form-email1" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                        </div>
+
+                        <div class="md-form pb-3">
+                            <input type="password" id="Form-pass1" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                            <p class="font-small  d-flex justify-content-end" style="color: #6d4d41">Forgot <a href="#" class=" ml-1"
+                                    style="color: #6d4d41">
+                                    Password?</a></p>
+                        </div>
+
+                        <div class="text-center mb-3">
+                            <button type="button" class="btn  btn-block btn-rounded z-depth-1a" style="background-color: #6d4d41">Sign
+                                in
+                            </button>
+                        </div>
+                        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign
+                            in with:</p>
+
+                        <div class="row my-3 d-flex justify-content-center">
+                            <!--Facebook-->
+                            <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-facebook-f text-center"
+                                    style="color: #6d4d41"></i></button>
+                            <!--Twitter-->
+                            <button type="button" class="btn btn-rounded mr-md-3 z-depth-1a"> <i class="fab fa-twitter" style="color: #6d4d41"></i></button>
+                            <!--Google +-->
+                            <button type="button" class="btn btn-rounded z-depth-1a"><i class="fab fa-google-plus-g" style="color: #6d4d41"></i></button>
+                        </div>
+                    </div>
+                    <!--Footer-->
+                    <div class="modal-footer mx-5 pt-3 mb-1">
+                        <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="signUp.html" class="ml-1"
+                                style="color: #6d4d41">
+                                Sign Up</a></p>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="fixed-action-btn smooth-scroll" style="bottom: 75px; right: 24px;">
+            <a href="#top-section" class="btn-floating btn-brown ">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+        </div>
+
+    </main>
+    <!--Main Layout-->
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+
+    <!-- Bootstrap tooltips -->
+
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/popper.min.js"></script>
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://namboss.blob.core.windows.net/huong/mdb.min.js"></script>
+
+    <script>
+        // SideNav Button Initialization
+        $(".button-collapse").sideNav();
+        //SideNav Scrollbar Initialization
+        var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+        Ps.initialize(sideNavScrollbar);
+        new WOW().init();
+    </script>
+    <script>
+        $(window).bind('scroll', function () {
+            var currentTop = $(window).scrollTop();
+            var show = $(".body").offset().top;
+            console.log(currentTop);
+            if (currentTop >= show) {
+                $('.btn-floating').css('visibility', 'visible');
+                $('.btn-floating').css('opacity', '1');
+                $('.btn-floating').css('transition', '.7s');
+            }
+
+            else {
+                $('.btn-floating').css('visibility', 'hidden');
+                $('.btn-floating').css('opacity', '0');
+
+                $('.btn-floating').css('transition', '.7s');
+            }
+        })
+    </script>
+    <script src="https://embed.small.chat/T2R6NDM27GCKNJ9074.js" async></script>
+
+</body>
+
+
+</html>
