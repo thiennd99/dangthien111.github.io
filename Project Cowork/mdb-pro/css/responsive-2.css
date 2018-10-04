@@ -16,7 +16,7 @@
         width: 90% !important;
     }
     .sepa, .credit {
-        margin-left: 21%;
+        width: 45%;
     }
     #firstname {
         margin-bottom: 0 !important;
@@ -26,7 +26,7 @@
     } */
     #strasse {
         margin-bottom: 0;
-        margin-top: 55px;
+        margin-top: 75px;
     }
     #zip {
         margin-bottom: 0;
@@ -34,6 +34,22 @@
     }
     #email, #tel {
         margin-top: 30px;
+    }
+    .right input, .right select {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #birth {
+        margin-top: 40px;
+    }
+    .country select {
+        margin-top: 32px;
+    }
+    #tel {
+        margin-top: 47px;
+    }
+    .cre {
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 768px){
