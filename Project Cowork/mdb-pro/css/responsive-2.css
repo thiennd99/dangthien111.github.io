@@ -1,4 +1,4 @@
-@media only screen and (max-width: 375px) , (max-width: 414px){
+@media only screen and (max-width: 375px){
     .blog-item {
         margin: 0 !important;
         margin-top: 30px !important;
@@ -21,9 +21,7 @@
     #firstname {
         margin-bottom: 0 !important;
     }
-    /* #lastname {
-        margin-top: 5px;
-    } */
+   
     #strasse {
         margin-bottom: 0;
         margin-top: 75px;
@@ -43,7 +41,7 @@
         margin-top: 40px;
     }
     .country select {
-        margin-top: 32px;
+        margin-top: 55px;
     }
     #tel {
         margin-top: 47px;
@@ -64,5 +62,108 @@
     }
     .info-artikel span {
         font-size: 18px;
+    }
+}
+@media only screen and (max-width: 414px){
+    .blog-item {
+        margin: 0 !important;
+        margin-top: 30px !important;
+    }
+    .headline {
+        font-size: 60px;
+    }
+    .headline_2 {
+        font-size: 1.2em
+    }
+    .wrapper h1 {
+        font-size: 30px
+    }
+    input, select {
+        width: 90% !important;
+    }
+    .sepa, .credit {
+        width: 45%;
+    }
+    #firstname {
+        margin-bottom: 0 !important;
+    }
+    #strasse {
+        margin-bottom: 0;
+        margin-top: 75px;
+    }
+    #zip {
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+    #email, #tel {
+        margin-top: 30px;
+    }
+    .right input, .right select {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #birth {
+        margin-top: 40px;
+    }
+    .country select {
+        margin-top: 35px;
+    }
+    #tel {
+        margin-top: 47px;
+    }
+    .cre {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .blog-item {
+        margin: 0 !important;
+        margin-top: 30px !important;
+    }
+    .headline {
+        font-size: 60px;
+    }
+    .headline_2 {
+        font-size: 1.2em
+    }
+    .wrapper h1 {
+        font-size: 30px
+    }
+    input, select {
+        width: 90% !important;
+    }
+    .sepa, .credit {
+        width: 45%;
+    }
+    #firstname {
+        margin-bottom: 0 !important;
+    }
+ 
+    #strasse {
+        margin-bottom: 0;
+        margin-top: 75px;
+    }
+    #zip {
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+    #email, #tel {
+        margin-top: 30px;
+    }
+    .right input, .right select {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #birth {
+        margin-top: 40px;
+    }
+    .country select {
+        margin-top: 55px;
+    }
+    #tel {
+        margin-top: 47px;
+    }
+    .cre {
+        font-size: 15px;
     }
 }
