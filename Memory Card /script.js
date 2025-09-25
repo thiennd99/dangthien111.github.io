@@ -19,17 +19,35 @@ $('.card').html(html);
 let count = 0;
 
 let remainingTime = 30;
+let remainingTimeNormal = 150;
+let remainingTimeEasy = 300;
 
 let run;
+
+function easy() {
+    $('.card__inner').css('pointer-events', 'auto')
+    $('.alert').hide();
+
+    run = setInterval(function () {
+        remainingTimeEasy--;
+        document.getElementById('pro').value = remainingTimeEasy;
+        if (remainingTimeEasy == 0) {
+            clearInterval(run);
+            $('.card__inner').css('pointer-events', 'none');
+            $('.alert_lose').show();
+        }
+    }, 1000)
+
+};
 
 function normal() {
     $('.card__inner').css('pointer-events', 'auto')
     $('.alert').hide();
 
     run = setInterval(function () {
-        remainingTime--;
-        document.getElementById('pro').value = remainingTime;
-        if (remainingTime == 0) {
+        remainingTimeNormal--;
+        document.getElementById('pro').value = remainingTimeNormal;
+        if (remainingTimeNormal == 0) {
             clearInterval(run);
             $('.card__inner').css('pointer-events', 'none');
             $('.alert_lose').show();
