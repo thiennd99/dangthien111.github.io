@@ -50,7 +50,7 @@ function normal() {
             $('.card__inner').css('pointer-events', 'none');
             $('.alert_lose').show();
         }
-    }, 700)
+    }, 350)
 
 };
 
