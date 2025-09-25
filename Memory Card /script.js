@@ -18,9 +18,7 @@ for (let i = 0; i < imgArr.length; i++) {
 $('.card').html(html);
 let count = 0;
 
-let remainingTime = 30;
-let remainingTimeNormal = 150;
-let remainingTimeEasy = 300;
+let remainingTime = 200;
 
 let run;
 
@@ -29,9 +27,9 @@ function easy() {
     $('.alert').hide();
 
     run = setInterval(function () {
-        remainingTimeEasy--;
-        document.getElementById('pro').value = remainingTimeEasy;
-        if (remainingTimeEasy == 0) {
+        remainingTime--;
+        document.getElementById('pro').value = remainingTime;
+        if (remainingTime == 0) {
             clearInterval(run);
             $('.card__inner').css('pointer-events', 'none');
             $('.alert_lose').show();
@@ -45,14 +43,14 @@ function normal() {
     $('.alert').hide();
 
     run = setInterval(function () {
-        remainingTimeNormal--;
-        document.getElementById('pro').value = remainingTimeNormal;
-        if (remainingTimeNormal == 0) {
+        remainingTime--;
+        document.getElementById('pro').value = remainingTime;
+        if (remainingTime == 0) {
             clearInterval(run);
             $('.card__inner').css('pointer-events', 'none');
             $('.alert_lose').show();
         }
-    }, 1000)
+    }, 700)
 
 };
 
